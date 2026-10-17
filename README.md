@@ -72,6 +72,12 @@ The buffer form is compiled as a rustdoc test. Separate
 The independent [CrossWeave holdout](fixtures/holdout/src/main.rs) authors a new
 design with runtime-only dependencies and no runtime change.
 
+## Composition and extensions
+
+Finite sequences, delayed parallel tracks and integer transitions are available in
+`spark_runtime::composition`. See [composition](docs/composition.md) and the
+[expansion status](docs/expansions.md) for runnable examples and the remaining work.
+
 ## Host-owned integration
 
 ```sh

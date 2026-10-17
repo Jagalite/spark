@@ -2,6 +2,7 @@
 //! Small explicit-time painting building blocks. No clocks, IO, threads, or scheduler.
 //! Hosts own layout, base content, invalidation, and presentation.
 
+pub mod composition;
 pub mod palette;
 pub mod playback;
 pub mod profile;

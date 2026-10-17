@@ -1,4 +1,7 @@
-# MIT source publication verification
+# MIT foundation source publication verification
+
+This is the foundation publication record for commit `f2488f7`. Later expansion
+implementation and checks are recorded in [expansion status](expansions.md).
 
 Prepared 2026-10-17 for the owner's request to review the code, add README and
 .gitignore, and commit/push to Jagalite/spark. The owner selected MIT. This scope

@@ -20,6 +20,10 @@ docs/architecture.md, docs/authoring.md, and the relevant design brief before ed
   Runtime/public API changes remain centrally owned and independently tested.
   The owner authorized MIT source publication to Jagalite/spark on 2026-10-17.
   Package publication, release tags and deployment require separate approval.
+- On 2026-10-17 the owner authorized five reviewed expansions: composition, live
+  playground/export, caller-fed adapters, an external extension starter and a
+  coordinated status family. Keep the core deterministic and four-package boundary.
+  New public contracts require independent review before source publication.
 
 ## Local checks
 
