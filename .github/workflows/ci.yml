@@ -33,6 +33,10 @@ jobs:
       - run: cargo run --manifest-path fixtures/consumer-all/Cargo.toml --locked
       - run: cargo test --manifest-path fixtures/holdout/Cargo.toml --locked
       - run: cargo run --manifest-path fixtures/holdout/Cargo.toml --locked
+      - run: cargo fmt --manifest-path fixtures/extension-starter/Cargo.toml -- --check
+      - run: cargo clippy --manifest-path fixtures/extension-starter/Cargo.toml --all-targets --locked -- -D warnings
+      - run: cargo test --manifest-path fixtures/extension-starter/Cargo.toml --locked
+      - run: cargo run --manifest-path fixtures/extension-starter/Cargo.toml --locked -- --check
   wasm:
     runs-on: ubuntu-latest
     steps:

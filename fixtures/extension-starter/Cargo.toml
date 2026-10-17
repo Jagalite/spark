@@ -1,0 +1,18 @@
+[package]
+name = "spark-extension-starter"
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.90"
+publish = false
+license = "MIT"
+repository = "https://github.com/Jagalite/spark"
+
+# This is a downstream example, not a fifth Spark workspace package.
+[workspace]
+
+[dependencies]
+spark-runtime = { version = "=0.1.0", path = "../../crates/runtime" }
+ratatui-core = { version = "=0.1.2", default-features = false, features = ["std", "underline-color"] }
+
+[lints.rust]
+unsafe_code = "forbid"

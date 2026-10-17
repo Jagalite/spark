@@ -78,7 +78,11 @@ design with runtime-only dependencies and no runtime change.
 
 Finite sequences, delayed parallel tracks and integer transitions are available in
 `spark_runtime::composition`. See [composition](docs/composition.md) and the
-[expansion status](docs/expansions.md) for runnable examples and the remaining work.
+[expansion status](docs/expansions.md) for runnable examples and validation.
+
+Build your own design from the runtime-only [extension starter](docs/extensions.md):
+copy/rename its original Hanging Lantern, run the public-API tests, and reproduce
+the checked cell preview without adding a package to Spark’s workspace.
 
 ## Host-owned integration
 

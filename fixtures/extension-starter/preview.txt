@@ -1,0 +1,104 @@
+Hanging Lantern | original downstream Spark design | visual revision 1
+Actual Rust Buffer glyphs; each row is enclosed by host-added | delimiters.
+Native 13x7; ASCII; default palette; truecolor unless marked quiet.
+Text-only capture omits foreground, background, underline and modifiers.
+No font/terminal, color, motion-smoothness or performance qualification.
+Host supplies synthetic elapsed time; Playback rate 1; presentation cap 16ms.
+
+full / native | time_ms=0 | size=13x7 | next_host_ns=240000000
+|      |      |
+|    .-+-.    |
+|   /     \   |
+|   |  .  |   |
+|   |     |   |
+|   '-----'   |
+|     / \     |
+
+full / native | time_ms=240 | size=13x7 | next_host_ns=360000000
+|      |      |
+|    .-+-.    |
+|   /     \   |
+|   |  *  |   |
+|   |     |   |
+|   '-----'   |
+|     / \     |
+
+full / native | time_ms=360 | size=13x7 | next_host_ns=520000000
+|      |      |
+|    .-+-.    |
+|   /     \   |
+|   | -*- |   |
+|   |     |   |
+|   '-----'   |
+|     / \     |
+
+full / native | time_ms=520 | size=13x7 | next_host_ns=840000000
+|      |      |
+|    .-+-.    |
+|   /  '  \   |
+|   | -*- |   |
+|   |  .  |   |
+|   '-----'   |
+|     / \     |
+
+full / native | time_ms=840 | size=13x7 | next_host_ns=1000000000
+|      |      |
+|    .-+-.    |
+|   /     \   |
+|   | -*- |   |
+|   |     |   |
+|   '-----'   |
+|     / \     |
+
+full / native | time_ms=1000 | size=13x7 | next_host_ns=1120000000
+|      |      |
+|    .-+-.    |
+|   /     \   |
+|   |  *  |   |
+|   |     |   |
+|   '-----'   |
+|     / \     |
+
+full / native | time_ms=1120 | size=13x7 | next_host_ns=1360000000
+|      |      |
+|    .-+-.    |
+|   /     \   |
+|   |  .  |   |
+|   |     |   |
+|   '-----'   |
+|     / \     |
+
+reduced / native (quarter speed) | time_ms=2080 | size=13x7 | next_host_ns=3360000000
+|      |      |
+|    .-+-.    |
+|   /  '  \   |
+|   | -*- |   |
+|   |  .  |   |
+|   '-----'   |
+|     / \     |
+
+quiet / native (ASCII monochrome static poster) | time_ms=9000 | size=13x7 | next_host_ns=none
+|      |      |
+|    .-+-.    |
+|   /  '  \   |
+|   | -*- |   |
+|   |  .  |   |
+|   '-----'   |
+|     / \     |
+
+full / compact (stationary fallback) | time_ms=520 | size=4x2 | next_host_ns=none
+|    |
+|  * |
+
+Embedding: request=(2,2,17,9), buffer=(0,0,21,11), protected=(8,8,5,1)
+| Host-owned panel    |
+|                     |
+|                     |
+|          |          |
+|        .-+-.        |
+|       /  '  \       |
+|       | -*- |       |
+|       |  .  |       |
+|       'OWNER'       |
+|         / \         |
+|                     |

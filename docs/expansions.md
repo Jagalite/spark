@@ -15,7 +15,7 @@ workspace packages, pinned dependencies and existing exact-cell fixtures.
 3. **Host adapters:** pure caller-fed counted progress/task snapshots and bounded
    explicit-time streamed activity, with reset/generation safeguards. Implemented.
 4. **External starter:** copyable runtime-only design template, public-API tests,
-   docs and reproducible actual-cell preview. In progress.
+   docs and reproducible actual-cell preview. Implemented.
 5. **Coordinated status theme:** distinct loading/empty/success/error presentations
    sharing geometry/palette/fallback rules and explicit host selection. In progress.
 
@@ -72,3 +72,18 @@ Count completion remains distinct from the application's chosen status.
 The clean adapter increment passed all 19 integrated local commands: 158 workspace
 tests, two doctests, five public holdout tests, unchanged snapshots/assets,
 consumers/smokes, WASM, seven harness guards and four Linux PTY flows.
+
+## External design starter
+
+The [runtime-only starter](extensions.md) includes original Hanging Lantern art,
+a source-only copy/rename helper, public-API tests and exact text preview. Its 16
+tests, formatting, strict Clippy and read-only preview reproduction pass both
+in-tree and after copying/renaming outside the checkout. Invalid names and existing
+destinations are rejected. The standalone fixture owns its own workspace and
+remains `publish = false`; the root still contains exactly four packages.
+
+The clean starter increment passed all 23 local integration commands. Counts are
+158 workspace tests, two doctests, five holdout tests and 16 standalone starter
+tests, plus the snapshot/asset checks, consumers/smokes, WASM, seven harness guards
+and four Linux PTY flows. CI runs the starter explicitly on each native target;
+workspace tests alone do not include it.
