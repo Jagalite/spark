@@ -2,13 +2,15 @@
 
 **Small terminal art. Your app keeps the controls.**
 
-Six distinctive Rust/Ratatui designs, sampled at explicit time and embedded through
+Six distinctive Rust/Ratatui designs and a coordinated status family, sampled at
+explicit time and embedded through
 ordinary widgets, inline text and permission-limited decorators. The host keeps its
 event loop, state, data and terminal. No AI service, renderer-owned clock, IO, thread
 or mandatory async runtime.
 
-**Status: MIT-licensed foundation source candidate.** All six designs are implemented.
-See [publication verification](docs/publication.md) for the current checks and
+**Status: MIT-licensed source candidate.** The six-design foundation and five
+[bounded expansions](docs/expansions.md) are implemented. See
+[publication verification](docs/publication.md) for the foundation checks and
 [foundation status](docs/foundation-status.md) for historical evidence and remaining
 platform/release gates. The crates are not published to a registry.
 
@@ -37,7 +39,7 @@ a compilable configuration. For terminal-free export and exact settings, see the
 Rust **1.90.0**, `ratatui-core` **0.1.2** and application `ratatui` **0.30.2** are pinned.
 See [compatibility](docs/compatibility.md) for tested and unqualified routes.
 
-## Six compositions
+## Six original designs
 
 - **Segmented Comet:** broken luminous trail, widget or exact-width styled `Line`
 - **Assembly Progress:** conveyor/gantry controlled by truthful known/unknown progress
@@ -83,6 +85,18 @@ Finite sequences, delayed parallel tracks and integer transitions are available 
 Build your own design from the runtime-only [extension starter](docs/extensions.md):
 copy/rename its original Hanging Lantern, run the public-API tests, and reproduce
 the checked cell preview without adding a package to Spark’s workspace.
+
+The [Signal Seal status theme](docs/status-theme.md) coordinates loading, empty,
+success and error through one palette and geometry, readable literal labels,
+quiet fallbacks and finite terminal poses. The host always selects the state.
+
+```sh
+cargo run -p spark-catalog --example composition
+cargo run -p spark-catalog --example adapters
+cargo run -p spark-catalog --example status_theme -- --text
+cargo run --manifest-path fixtures/extension-starter/Cargo.toml --locked
+```
+
 
 ## Host-owned integration
 

@@ -17,7 +17,7 @@ workspace packages, pinned dependencies and existing exact-cell fixtures.
 4. **External starter:** copyable runtime-only design template, public-API tests,
    docs and reproducible actual-cell preview. Implemented.
 5. **Coordinated status theme:** distinct loading/empty/success/error presentations
-   sharing geometry/palette/fallback rules and explicit host selection. In progress.
+   sharing geometry/palette/fallback rules and explicit host selection. Implemented.
 
 ## Composition
 
@@ -87,3 +87,49 @@ The clean starter increment passed all 23 local integration commands. Counts are
 tests, plus the snapshot/asset checks, consumers/smokes, WASM, seven harness guards
 and four Linux PTY flows. CI runs the starter explicitly on each native target;
 workspace tests alone do not include it.
+
+## Coordinated status family
+
+[Signal Seal](status-theme.md) supplies one host-selected loading/empty/success/error
+family with shared geometry and palette. Full/reduced/static, Unicode/ASCII,
+monochrome, compact and protected/clipped presentations are explicit. Fifteen
+focused tests and nine reproducible actual-cell preview sheets pass, including
+exact completion boundaries and terminal silhouettes. The existing six-design
+gallery selection and renderer goldens are unchanged.
+
+## Review and boundaries
+
+All five bounded additions passed independent public-contract/source review before
+publication. The reviewer authored 11 new composition contract tests and separately
+reran the other implementation suites. Review corrections tightened sample
+invariants, fixed borrowed-widget test lint issues, and rejected invalid starter
+package names before copying. A real PTY regression also exposed and fixed a
+terminal-destructor escape after Rust export.
+
+No production dependency, runtime IO/clock/thread, broader writer permission,
+mandatory registry or fifth workspace package was added. Detailed machine/PTY
+captures remain outside Git; reusable regression scripts and concise results are
+source. There is no package release, tag, external deployment, general benchmark,
+new long-host-soak, or physical-terminal/font acceptance claim. WASM compilation
+is not browser-renderer parity. Additional host-specific integrations and visual
+acceptance should be assessed in the consuming application.
+
+## Final integrated local verification
+
+The complete five-expansion source candidate passed all 24 integration commands,
+plus an actual Rust capture exercising the expanded source fingerprint. Results:
+173 workspace tests, two doctests, five external holdout tests and 16 standalone
+starter tests: **196 Rust tests total**. Formatting, strict all-target Clippy,
+unchanged renderer goldens, generated assets, manifest/dependency guards, two
+minimal consumers, gallery/composition/adapters/status/three-host smokes,
+runtime/catalog WASM compilation, seven Python harness guards and four Linux PTY
+flows passed. Markdown relative-file links and tracked-file checksums were checked.
+
+The source fingerprint is
+`d534b1454960f66a39ac6f63a643f76d5e1df65cc533d229929c4ac58633bab0`.
+The xtask algorithm now also includes the new starter and gallery export tests,
+plus their canonical config, copy helper and preview inputs. This reviewed hashing
+scope change affects future evidence stamps, not rendering or historical records.
+The root `SHA256SUMS` separately covers every tracked file except itself. Remote
+commit/tree and CI results are verified after publication; this local check does
+not predeclare them green.

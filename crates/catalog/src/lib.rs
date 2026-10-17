@@ -32,3 +32,5 @@ pub use pocket_mascot::{MascotSample, PocketMascot};
 
 /// Optional pure, caller-fed host-data adapters.
 pub mod adapters;
+/// A coordinated host-selected status presentation.
+pub mod status;

@@ -158,7 +158,10 @@ fn source_hash() -> Result<String> {
         "fixtures/consumer-all/src",
         "fixtures/holdout/src",
         "fixtures/holdout/tests",
+        "fixtures/extension-starter/src",
+        "fixtures/extension-starter/tests",
         "apps/gallery/src",
+        "apps/gallery/tests",
         "xtask/src",
     ] {
         for path in source_files(Path::new(root))? {
@@ -181,6 +184,12 @@ fn source_hash() -> Result<String> {
         "fixtures/consumer-all/Cargo.lock",
         "fixtures/holdout/Cargo.toml",
         "fixtures/holdout/Cargo.lock",
+        "fixtures/extension-starter/Cargo.toml",
+        "fixtures/extension-starter/Cargo.lock",
+        "fixtures/extension-starter/rust-toolchain.toml",
+        "fixtures/extension-starter/copy.sh",
+        "fixtures/extension-starter/preview.txt",
+        "apps/gallery/tests/terminal.py",
         "fixtures/cells/segmented-comet.json",
         "fixtures/cells/foundation-six.json",
         ".cargo/config.toml",

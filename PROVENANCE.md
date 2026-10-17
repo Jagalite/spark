@@ -19,6 +19,12 @@ Rust widget. The original MIT notice is copied by the scaffolding helper;
 dependency terms remain separate. This origin record is not legal clearance or
 an independent aesthetic-acceptance claim.
 
+The coordinated Signal Seal family in `crates/catalog/src/status.rs` is newly
+authored procedural cell artwork for the owner-authorized loading/empty/success/error
+expansion, with AI assistance and no external art or assets. Its text/HTML showcase
+serializes actual sampled widget cells. The same MIT terms and review limitations
+apply; elapsed animation never establishes the truth of the host-selected status.
+
 ## Historical record (2026-10-14)
 
 ## Project terms

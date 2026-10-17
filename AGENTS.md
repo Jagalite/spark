@@ -43,4 +43,15 @@ cargo run --manifest-path fixtures/consumer-all/Cargo.toml --locked
 cargo test --manifest-path fixtures/holdout/Cargo.toml --locked
 cargo check -p spark-runtime -p spark-catalog --target wasm32-unknown-unknown --locked
 
+Additional expansion checks:
+
+cargo run -p spark-catalog --example composition --locked -- --smoke
+cargo run -p spark-catalog --example adapters --locked -- --smoke
+cargo run -p spark-catalog --example status_theme --locked -- --smoke
+cargo fmt --manifest-path fixtures/extension-starter/Cargo.toml -- --check
+cargo clippy --manifest-path fixtures/extension-starter/Cargo.toml --all-targets --locked -- -D warnings
+cargo test --manifest-path fixtures/extension-starter/Cargo.toml --locked
+cargo run --manifest-path fixtures/extension-starter/Cargo.toml --locked -- --check
+python3 apps/gallery/tests/terminal.py target/debug/spark-gallery # Unix only
+
 See docs/performance.md for measured-baseline and actual-preview commands.
