@@ -105,8 +105,116 @@ fn regions(size: Size, width: u16, height: u16, embedded: bool) -> Regions {
         compact: false,
     }
 }
-pub fn sample_area(size: Size, width: u16, height: u16, embedded: bool) -> Rect {
-    regions(size, width, height, embedded).art
+pub fn sample_area(size: Size, app: &App) -> Rect {
+    if app.inspector {
+        let (preview, _) = inspector_panels(size);
+        let mut inner = inset(preview, 1, 1);
+        if app.embedded {
+            let reserve = inner.height.min(2);
+            inner.y = inner.y.saturating_add(reserve);
+            inner.height -= reserve;
+        }
+        fit(inner, app.width, app.height)
+    } else {
+        regions(size, app.width, app.height, app.embedded).art
+    }
+}
+fn inspector_panels(size: Size) -> (Rect, Rect) {
+    let height = size.height.saturating_sub(3);
+    let top = 1.min(size.height);
+    if size.width >= 110 {
+        let left = (size.width / 3).min(64);
+        (
+            Rect::new(0, top, left, height),
+            Rect::new(left, top, size.width - left, height),
+        )
+    } else {
+        let preview = height / 3;
+        (
+            Rect::new(0, top, size.width, preview),
+            Rect::new(0, top + preview, size.width, height - preview),
+        )
+    }
+}
+fn render_inspector(frame: &mut Frame, app: &App, clip: ClipTime) {
+    let full = frame.area();
+    let (preview, code) = inspector_panels(full.as_size());
+    text(
+        frame,
+        row(full, 0),
+        format!(
+            "SPARK / {} / {} / {:.3}s {:.2}x",
+            app.selection.title(),
+            if app.paused {
+                "PAUSED"
+            } else if app.profile.motion == Motion::Static {
+                "STATIC"
+            } else {
+                "LIVE"
+            },
+            clip.as_duration().as_secs_f64(),
+            f64::from(app.rate_milli) / 1000.0
+        ),
+        style(app, INK),
+    );
+    if preview.width >= 3 && preview.height >= 3 {
+        panel(frame, app, preview, " LIVE SAMPLE ".into());
+    }
+    if app.embedded {
+        let inner = inset(preview, 1, 1);
+        text(frame, row(inner, 0), "HOST-OWNED STATUS", style(app, INK));
+        text(
+            frame,
+            row(inner, 1),
+            app.selection.input_label(app.input, app.unknown),
+            style(app, MUTED),
+        );
+    }
+    if code.width >= 3 && code.height >= 3 {
+        panel(frame, app, code, " RUST / e exports and exits ".into());
+    }
+    let area = sample_area(full.as_size(), app);
+    let context = SampleContext::new(clip, &app.palette, &app.profile);
+    let protected = design::base(app.selection, area, &context, frame.buffer_mut());
+    app.designs.render(
+        app.selection,
+        &context,
+        app.input,
+        app.unknown,
+        area,
+        &protected,
+        frame.buffer_mut(),
+    );
+    let source = crate::export::rust(app, clip, full.as_size());
+    let inner = inset(code, 1, 1);
+    let lines = source.lines().count();
+    let longest = source.lines().map(str::len).max().unwrap_or(0);
+    let configuration = source
+        .lines()
+        .position(|line| line.contains("let design ="))
+        .unwrap_or(0);
+    let scroll = configuration
+        .saturating_add_signed(isize::from(app.code_scroll))
+        .min(lines.saturating_sub(usize::from(inner.height)));
+    let column = usize::from(app.code_column).min(longest.saturating_sub(usize::from(inner.width)));
+    frame.render_widget(
+        Paragraph::new(source)
+            .style(style(app, INK))
+            .scroll((scroll as u16, column as u16)),
+        inner,
+    );
+    text(
+        frame,
+        row(full, full.height.saturating_sub(2)),
+        "i close  e export+exit  PgUp/PgDn scroll  h/l pan  Home/End  q quit",
+        style(app, MUTED),
+    );
+    text(
+        frame,
+        row(full, full.height.saturating_sub(1)),
+        "1-6 design  space pause  [ ] seek  arrows size  c/a/m/p/s profiles",
+        style(app, MUTED),
+    );
 }
 fn style(app: &App, color: Color) -> Style {
     if app.profile.colors == ColorProfile::Monochrome {
@@ -155,6 +263,10 @@ pub fn render(frame: &mut Frame, app: &App, clip: ClipTime) {
             .resolve(Style::default().bg(BACKGROUND).fg(INK), app.profile.colors)
     };
     frame.render_widget(Block::default().style(background), full);
+    if app.inspector {
+        render_inspector(frame, app, clip);
+        return;
+    }
     let context = SampleContext::new(clip, &app.palette, &app.profile);
     if regions.compact {
         if regions.panel.width >= 3 && regions.panel.height >= 3 {
@@ -347,7 +459,7 @@ pub fn render(frame: &mut Frame, app: &App, clip: ClipTime) {
         text(
             frame,
             regions.footer,
-            "1-6 design  space pause  q quit",
+            "1-6 design  i Rust  q quit",
             style(app, MUTED),
         );
     } else {
@@ -366,7 +478,7 @@ pub fn render(frame: &mut Frame, app: &App, clip: ClipTime) {
         text(
             frame,
             row(regions.footer, 2),
-            ", . speed  n seed  - + input  u unknown progress",
+            ", . speed  n seed  - + input  u unknown  i Rust  e export+exit",
             style(app, MUTED),
         );
     }
@@ -423,13 +535,65 @@ mod tests {
                         terminal
                             .draw(|frame| render(frame, &app, ClipTime::MAX))
                             .unwrap();
-                        let art =
-                            sample_area(Size::new(width, height), app.width, app.height, embedded);
+                        let art = sample_area(Size::new(width, height), &app);
                         if !art.is_empty() {
                             assert!(
                                 art.right() <= width && art.bottom() <= height,
                                 "{art:?} exceeds {width}x{height}"
                             );
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #[test]
+    fn inspector_repeated_close_clears_code_and_keeps_the_sample() {
+        let mut terminal = Terminal::new(TestBackend::new(140, 42)).unwrap();
+        let mut app = App::default();
+        app.paused = true;
+        let clip = ClipTime::from_nanos(750_000_000);
+        terminal.draw(|frame| render(frame, &app, clip)).unwrap();
+        let normal = terminal.backend().buffer().clone();
+        for _ in 0..20 {
+            app.inspector = true;
+            for scroll in [-512, 0, 512] {
+                app.code_scroll = scroll;
+                terminal.draw(|frame| render(frame, &app, clip)).unwrap();
+            }
+            app.inspector = false;
+            terminal.draw(|frame| render(frame, &app, clip)).unwrap();
+            assert_eq!(terminal.backend().buffer(), &normal);
+        }
+    }
+    #[test]
+    fn inspector_handles_resizes_empty_panels_and_scroll_extremes() {
+        let mut app = App::default();
+        app.inspector = true;
+        for selection in Selection::ALL {
+            app.select(selection, std::time::Duration::ZERO);
+            for (width, height) in [
+                (0, 0),
+                (1, 1),
+                (1, 2),
+                (7, 3),
+                (24, 8),
+                (100, 32),
+                (110, 17),
+                (140, 42),
+            ] {
+                for embedded in [false, true] {
+                    app.embedded = embedded;
+                    for scroll in [-512, 0, 512] {
+                        app.code_scroll = scroll;
+                        app.code_column = if scroll == 512 { 512 } else { 0 };
+                        let mut terminal = Terminal::new(TestBackend::new(width, height)).unwrap();
+                        terminal
+                            .draw(|frame| render(frame, &app, ClipTime::MAX))
+                            .unwrap();
+                        let area = sample_area(Size::new(width, height), &app);
+                        if !area.is_empty() {
+                            assert!(area.right() <= width && area.bottom() <= height);
                         }
                     }
                 }

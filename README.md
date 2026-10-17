@@ -30,7 +30,9 @@ cargo run -p spark-gallery -- --smoke
 
 Choose a design; pause/restart/scrub; change size, palette, capability profile,
 speed, seed and input; inspect static or embedded views. Inactive designs do not
-animate in the selector. Run `--help` for current controls.
+animate in the selector. Press `i` for the live Rust inspector and `e` to export
+a compilable configuration. For terminal-free export and exact settings, see the
+[playground guide](docs/playground.md). Run `--help` for current controls.
 
 Rust **1.90.0**, `ratatui-core` **0.1.2** and application `ratatui` **0.30.2** are pinned.
 See [compatibility](docs/compatibility.md) for tested and unqualified routes.

@@ -21,6 +21,9 @@ jobs:
       - run: cargo xtask snapshots --check
       - run: cargo xtask generate-assets --check
       - run: cargo run -p spark-gallery --locked -- --smoke
+      - name: Gallery terminal lifecycle (Linux)
+        if: runner.os == 'Linux'
+        run: python3 apps/gallery/tests/terminal.py target/debug/spark-gallery
       - run: cargo run -p spark-catalog --example composition --locked -- --smoke
       - run: cargo run -p spark-catalog --example sync_host --locked -- --smoke
       - run: cargo run -p spark-catalog --example async_host --locked -- --smoke

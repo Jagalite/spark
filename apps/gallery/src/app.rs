@@ -18,6 +18,10 @@ pub struct App {
     pub paused: bool,
     pub amber: bool,
     pub embedded: bool,
+    pub inspector: bool,
+    /// Signed scroll offset from the design configuration in the source.
+    pub code_scroll: i16,
+    pub code_column: u16,
     pub seed: u64,
     pub input: u8,
     pub unknown: bool,
@@ -38,6 +42,9 @@ impl Default for App {
             paused: false,
             amber: false,
             embedded: false,
+            inspector: false,
+            code_scroll: 0,
+            code_column: 0,
             seed: 7,
             input: 65,
             unknown: false,
@@ -50,6 +57,7 @@ impl Default for App {
 }
 pub struct Outcome {
     pub quit: bool,
+    pub export: bool,
     pub changed: bool,
 }
 impl App {
@@ -74,7 +82,7 @@ impl App {
             return None;
         }
         let context = SampleContext::new(self.displayed, &self.palette, &self.profile);
-        let area = crate::view::sample_area(terminal, self.width, self.height, self.embedded);
+        let area = crate::view::sample_area(terminal, self);
         self.designs
             .interval(
                 self.selection,
@@ -91,6 +99,11 @@ impl App {
                 )
             })
     }
+    pub fn seek(&mut self, clip: ClipTime, now: Duration) {
+        self.clip_anchor = clip.as_duration();
+        self.host_anchor = now;
+        self.displayed = clip;
+    }
     pub fn select(&mut self, selection: Selection, now: Duration) {
         self.selection = selection;
         let size = selection.preferred();
@@ -104,6 +117,7 @@ impl App {
         if key.kind != KeyEventKind::Press {
             return Outcome {
                 quit: false,
+                export: false,
                 changed: false,
             };
         }
@@ -113,7 +127,15 @@ impl App {
         if quit {
             return Outcome {
                 quit: true,
+                export: false,
                 changed: false,
+            };
+        }
+        if key.code == KeyCode::Char('e') {
+            return Outcome {
+                quit: true,
+                changed: false,
+                export: true,
             };
         }
         match key.code {
@@ -192,6 +214,24 @@ impl App {
                     Palette::default()
                 };
             }
+            KeyCode::Char('i') => self.inspector = !self.inspector,
+            KeyCode::PageUp if self.inspector => {
+                self.code_scroll = self.code_scroll.saturating_sub(8).max(-512)
+            }
+            KeyCode::PageDown if self.inspector => {
+                self.code_scroll = self.code_scroll.saturating_add(8).min(512)
+            }
+            KeyCode::Home if self.inspector => {
+                self.code_scroll = -512;
+                self.code_column = 0;
+            }
+            KeyCode::End if self.inspector => self.code_scroll = 512,
+            KeyCode::Char('h') if self.inspector => {
+                self.code_column = self.code_column.saturating_sub(8)
+            }
+            KeyCode::Char('l') if self.inspector => {
+                self.code_column = self.code_column.saturating_add(8).min(512)
+            }
             KeyCode::Char('v') => self.embedded = !self.embedded,
             KeyCode::Char('n') => {
                 self.seed = self.seed.wrapping_add(1);
@@ -209,12 +249,14 @@ impl App {
             _ => {
                 return Outcome {
                     quit: false,
+                    export: false,
                     changed: false,
                 };
             }
         }
         Outcome {
             quit: false,
+            export: false,
             changed: true,
         }
     }
@@ -284,5 +326,79 @@ mod tests {
         app.select(Selection::Prism, Duration::ZERO);
         app.displayed = ClipTime::MAX;
         assert_eq!(app.interval(Size::new(100, 32)), None);
+    }
+    #[test]
+    fn repeated_inspector_controls_preserve_paused_seek_and_bound_state() {
+        let mut app = App {
+            paused: true,
+            ..App::default()
+        };
+        app.seek(ClipTime::from_nanos(700_000_000), Duration::ZERO);
+        for i in 0..1000 {
+            let now = Duration::from_millis(i);
+            app.handle_key(key(KeyCode::Char('i')), now);
+            app.handle_key(key(KeyCode::Char(']')), now);
+            app.handle_key(key(KeyCode::Char('[')), now);
+            for code in [
+                KeyCode::Right,
+                KeyCode::Up,
+                KeyCode::Char('+'),
+                KeyCode::Char('.'),
+                KeyCode::PageDown,
+                KeyCode::Char('l'),
+            ] {
+                app.handle_key(key(code), now);
+            }
+        }
+        assert!(!app.inspector);
+        assert!(app.paused);
+        assert_eq!(app.clip_time(Duration::MAX).as_nanos(), 700_000_000);
+        assert_eq!(
+            (app.width, app.height, app.input, app.rate_milli),
+            (256, 64, 100, 4000)
+        );
+        assert_eq!((app.code_scroll, app.code_column), (512, 512));
+        app.inspector = true;
+        for _ in 0..1000 {
+            for code in [
+                KeyCode::Left,
+                KeyCode::Down,
+                KeyCode::Char('-'),
+                KeyCode::Char(','),
+                KeyCode::PageUp,
+                KeyCode::Char('h'),
+            ] {
+                app.handle_key(key(code), Duration::from_secs(2));
+            }
+        }
+        assert_eq!(
+            (app.width, app.height, app.input, app.rate_milli),
+            (1, 1, 0, 250)
+        );
+        assert_eq!((app.code_scroll, app.code_column), (-512, 0));
+        app.handle_key(key(KeyCode::Char('r')), Duration::from_secs(2));
+        assert!(app.paused);
+        assert_eq!(app.clip_time(Duration::MAX), ClipTime::ZERO);
+        app.handle_key(key(KeyCode::Char(' ')), Duration::from_secs(3));
+        assert_eq!(
+            app.clip_time(Duration::from_secs(4)).as_nanos(),
+            250_000_000
+        );
+    }
+    #[test]
+    fn export_requires_an_explicit_press_and_quit_does_not_export() {
+        let mut app = App::default();
+        for kind in [KeyEventKind::Repeat, KeyEventKind::Release] {
+            let mut event = key(KeyCode::Char('e'));
+            event.kind = kind;
+            let outcome = app.handle_key(event, Duration::ZERO);
+            assert!(!outcome.quit && !outcome.changed && !outcome.export);
+        }
+        for code in [KeyCode::Char('q'), KeyCode::Esc] {
+            let outcome = app.handle_key(key(code), Duration::ZERO);
+            assert!(outcome.quit && !outcome.export);
+        }
+        let outcome = app.handle_key(key(KeyCode::Char('e')), Duration::ZERO);
+        assert!(outcome.quit && outcome.export && !outcome.changed);
     }
 }
