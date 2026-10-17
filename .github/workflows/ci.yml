@@ -25,6 +25,7 @@ jobs:
         if: runner.os == 'Linux'
         run: python3 apps/gallery/tests/terminal.py target/debug/spark-gallery
       - run: cargo run -p spark-catalog --example composition --locked -- --smoke
+      - run: cargo run -p spark-catalog --example adapters --locked -- --smoke
       - run: cargo run -p spark-catalog --example sync_host --locked -- --smoke
       - run: cargo run -p spark-catalog --example async_host --locked -- --smoke
       - run: cargo run -p spark-catalog --example paced_host --locked -- --smoke

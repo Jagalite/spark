@@ -13,7 +13,7 @@ workspace packages, pinned dependencies and existing exact-cell fixtures.
 2. **Live playground:** extend existing gallery controls with inspectable,
    compilable Rust configuration export. Implemented.
 3. **Host adapters:** pure caller-fed counted progress/task snapshots and bounded
-   explicit-time streamed activity, with reset/generation safeguards. In progress.
+   explicit-time streamed activity, with reset/generation safeguards. Implemented.
 4. **External starter:** copyable runtime-only design template, public-API tests,
    docs and reproducible actual-cell preview. In progress.
 5. **Coordinated status theme:** distinct loading/empty/success/error presentations
@@ -59,3 +59,16 @@ The clean integrated playground increment also passed all 18 local validation
 commands: 145 workspace tests, one doctest, five external holdout tests, existing
 snapshot/asset checks, consumers/smokes, WASM, seven harness guards and the four
 PTY flows. CI includes the PTY lifecycle check on Linux only.
+
+## Caller-fed host adapters
+
+[Adapter contracts and the runnable example](adapters.md) cover count snapshots,
+explicit task status and exact bounded stream decay. The 13 focused tests include
+conservative integer-ratio conversion, atomic rejection, generation replacement,
+maximum values, and 2,500 events with 12,500 pure queries against an independent
+small-integer reference. Strict Clippy, doctests and the adapter smoke pass.
+Count completion remains distinct from the application's chosen status.
+
+The clean adapter increment passed all 19 integrated local commands: 158 workspace
+tests, two doctests, five public holdout tests, unchanged snapshots/assets,
+consumers/smokes, WASM, seven harness guards and four Linux PTY flows.

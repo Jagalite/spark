@@ -29,3 +29,6 @@ pub use inputs::{InputError, Level, Progress};
 pub use telemetry_embers::{EmbersSample, TelemetryEmbers};
 pub mod pocket_mascot;
 pub use pocket_mascot::{MascotSample, PocketMascot};
+
+/// Optional pure, caller-fed host-data adapters.
+pub mod adapters;

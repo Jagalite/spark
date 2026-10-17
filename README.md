@@ -82,6 +82,10 @@ Finite sequences, delayed parallel tracks and integer transitions are available 
 
 ## Host-owned integration
 
+Pure [host adapters](docs/adapters.md) turn caller-supplied counts, task snapshots
+and generation-tagged stream events into truthful visual inputs. They do not fetch
+data, infer task success or own a clock.
+
 ```sh
 cargo run -p spark-catalog --example sync_host -- --smoke
 cargo run -p spark-catalog --example async_host -- --smoke
