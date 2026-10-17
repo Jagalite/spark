@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "assembly-progress",
+  "title": "Assembly Progress",
+  "reference": "R02",
+  "visual_revision": 1,
+  "status": "local-implementation-candidate",
+  "implementation": "crates/catalog/src/assembly_progress.rs",
+  "driver": "caller-progress-and-time",
+  "surfaces": [
+    "widget"
+  ],
+  "geometry": {
+    "preferred": [
+      24,
+      3
+    ],
+    "minimum_full": [
+      12,
+      3
+    ],
+    "composition_cap": [
+      80,
+      3
+    ],
+    "fit": "adaptive",
+    "fallback": "truthful static meter or point"
+  },
+  "profiles": [
+    "unicode-truecolor",
+    "ascii-ansi16",
+    "ascii-monochrome"
+  ],
+  "motion": [
+    "full",
+    "reduced",
+    "static"
+  ],
+  "capture_configuration": {
+    "period_ms": 1800,
+    "seed": 7,
+    "progress": 0.65,
+    "unknown_supported": true
+  },
+  "source_policy": {
+    "code": "Original local implementation; see PROVENANCE.md",
+    "artwork": "Original project visual study; no external character assets",
+    "license": "MIT"
+  },
+  "evidence": {
+    "exact_cells": "previews/assembly-progress.cells.json",
+    "fixed_font_preview": "previews/assembly-progress.gif",
+    "qualification": "qualification/foundation-linux-x86_64/assembly-progress.json",
+    "visual_review": "Independent fixed-font review completed; see docs/visual-review.md. Native terminal/font qualification remains open.",
+    "platforms": "only observed local checks; see qualification reports"
+  }
+}

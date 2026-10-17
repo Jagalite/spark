@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "border-runner",
+  "title": "Border Runner",
+  "reference": "R03",
+  "visual_revision": 1,
+  "status": "local-implementation-candidate",
+  "implementation": "crates/catalog/src/border_runner.rs",
+  "driver": "repeating-time",
+  "surfaces": [
+    "decorator"
+  ],
+  "geometry": {
+    "preferred": [
+      40,
+      9
+    ],
+    "minimum_full": [
+      3,
+      3
+    ],
+    "composition_cap": [
+      256,
+      128
+    ],
+    "fit": "requested-border",
+    "fallback": "no-op outside supported geometry"
+  },
+  "profiles": [
+    "unicode-truecolor",
+    "ascii-ansi16",
+    "ascii-monochrome"
+  ],
+  "motion": [
+    "full",
+    "reduced",
+    "static"
+  ],
+  "capture_configuration": {
+    "period_ms": 2800,
+    "seed": 7,
+    "excluded_title": true
+  },
+  "source_policy": {
+    "code": "Original local implementation; see PROVENANCE.md",
+    "artwork": "Original project visual study; no external character assets",
+    "license": "MIT"
+  },
+  "evidence": {
+    "exact_cells": "previews/border-runner.cells.json",
+    "fixed_font_preview": "previews/border-runner.gif",
+    "qualification": "qualification/foundation-linux-x86_64/border-runner.json",
+    "visual_review": "Independent fixed-font review completed; see docs/visual-review.md. Native terminal/font qualification remains open.",
+    "platforms": "only observed local checks; see qualification reports"
+  }
+}

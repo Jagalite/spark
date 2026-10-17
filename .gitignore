@@ -1,0 +1,66 @@
+# Rust build outputs and local toolchain/cache directories
+**/target/
+/.spark-cargo/
+/.spark-rustup/
+/qualification/local/
+
+# Editors, Python caches and temporary files
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+*.tmp
+*.swp
+*~
+
+# Local secrets; template examples may be committed
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# Generated archival evidence: see ARTIFACTS.md
+*.log
+*.cast.gz
+*.output.bin.gz
+*.samples.jsonl
+/qualification/endurance-linux-x86_64/attempt-01/binaries/
+/previews/*
+!/previews/assembly-progress.gif
+!/previews/assembly-progress.render.json
+!/previews/border-runner-boundaries.png
+!/previews/border-runner-contact-sheet.png
+!/previews/border-runner-fallback.png
+!/previews/border-runner-reader.png
+!/previews/border-runner-slow.gif
+!/previews/border-runner.gif
+!/previews/border-runner.render.json
+!/previews/catalog-contact-sheet.png
+!/previews/pocket-mascot.gif
+!/previews/pocket-mascot.render.json
+!/previews/prism-reveal-boundaries.png
+!/previews/prism-reveal-contact-sheet.png
+!/previews/prism-reveal-fallback.png
+!/previews/prism-reveal-reader.png
+!/previews/prism-reveal-slow.gif
+!/previews/prism-reveal.gif
+!/previews/prism-reveal.render.json
+!/previews/render-manifest.json
+!/previews/segmented-comet.gif
+!/previews/segmented-comet.render.json
+!/previews/telemetry-embers.gif
+!/previews/telemetry-embers.render.json
+
+# Historical machine/process evidence stays in the private handoff archive.
+/qualification/*
+!/qualification/README.md
+!/qualification/publication-20261017/
+!/qualification/endurance-linux-x86_64/
+/qualification/endurance-linux-x86_64/*
+!/qualification/endurance-linux-x86_64/test_harness_guards.py
+
+# Historical internal handoff, preserved in the private archive
+/HANDOFF.json

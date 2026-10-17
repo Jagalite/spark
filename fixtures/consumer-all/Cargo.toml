@@ -1,0 +1,18 @@
+[package]
+name = "spark-all-design-consumer"
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.90"
+publish = false
+license = "MIT"
+repository = "https://github.com/Jagalite/spark"
+
+[workspace]
+
+[dependencies]
+ratatui = { version = "=0.30.2", default-features = false, features = ["std"] }
+spark-runtime = { path = "../../crates/runtime" }
+spark-catalog = { path = "../../crates/catalog" }
+
+[lints.rust]
+unsafe_code = "forbid"

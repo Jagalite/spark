@@ -1,0 +1,17 @@
+[package]
+name = "spark-public-holdout"
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.90"
+publish = false
+license = "MIT"
+repository = "https://github.com/Jagalite/spark"
+
+[workspace]
+
+[dependencies]
+spark-runtime = { path = "../../crates/runtime" }
+ratatui-core = { version = "=0.1.2", default-features = false, features = ["std", "underline-color"] }
+
+[lints.rust]
+unsafe_code = "forbid"

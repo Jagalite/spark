@@ -1,0 +1,155 @@
+{
+  "schema": 2,
+  "captures": [
+    {
+      "schema": 2,
+      "design": "assembly-progress",
+      "source_sha256": "ade8eed73e7f1dd73c4be24d8a8fd77b6242083802c8ce47a4d53784c837bb47",
+      "capture_sha256": "4f915e74894d3c80bff299aca48f7bd93470641314940e263dbced762e21f548",
+      "renderer": "scripts/render_previews.py",
+      "renderer_sha256": "a67bc9b92c14f7b164f89c97a11e11ff8b0ff847068edfd0fdbd525fd66c0f4f",
+      "pillow": "12.3.0",
+      "font": "DejaVuSansMono.ttf",
+      "font_sha256": "54bf827eb99404e8f430c330ad30f063334f637eba0109b6a18d4f566a8e9dd8",
+      "cell_pixels": [
+        15,
+        30
+      ],
+      "background": "#0a111b",
+      "frame_duration_ms": 40,
+      "frames": 45,
+      "playback_kind": "loop",
+      "limitations": [
+        "Fixed-font offscreen preview, not a real terminal recording",
+        "BOLD and DIM are approximated; italics and blink are not simulated",
+        "Unsupported font glyphs may differ from terminal fonts; exact JSON remains authoritative",
+        "GIFs replay observation windows / one-shots where labeled; this does not imply a seamless loop"
+      ]
+    },
+    {
+      "schema": 2,
+      "design": "border-runner",
+      "source_sha256": "ade8eed73e7f1dd73c4be24d8a8fd77b6242083802c8ce47a4d53784c837bb47",
+      "capture_sha256": "0471c69047ee66dda0cff05dc5a928b9deaba93c257152fd5f9bae815cd351d4",
+      "renderer": "scripts/render_previews.py",
+      "renderer_sha256": "a67bc9b92c14f7b164f89c97a11e11ff8b0ff847068edfd0fdbd525fd66c0f4f",
+      "pillow": "12.3.0",
+      "font": "DejaVuSansMono.ttf",
+      "font_sha256": "54bf827eb99404e8f430c330ad30f063334f637eba0109b6a18d4f566a8e9dd8",
+      "cell_pixels": [
+        15,
+        30
+      ],
+      "background": "#0a111b",
+      "frame_duration_ms": 40,
+      "frames": 70,
+      "playback_kind": "loop",
+      "limitations": [
+        "Fixed-font offscreen preview, not a real terminal recording",
+        "BOLD and DIM are approximated; italics and blink are not simulated",
+        "Unsupported font glyphs may differ from terminal fonts; exact JSON remains authoritative",
+        "GIFs replay observation windows / one-shots where labeled; this does not imply a seamless loop"
+      ]
+    },
+    {
+      "schema": 2,
+      "design": "pocket-mascot",
+      "source_sha256": "ade8eed73e7f1dd73c4be24d8a8fd77b6242083802c8ce47a4d53784c837bb47",
+      "capture_sha256": "a57bcfe2a6a9ea8b2192a7fbc4858be39be5d29c5728ec77c18d1db8fcf3a302",
+      "renderer": "scripts/render_previews.py",
+      "renderer_sha256": "a67bc9b92c14f7b164f89c97a11e11ff8b0ff847068edfd0fdbd525fd66c0f4f",
+      "pillow": "12.3.0",
+      "font": "DejaVuSansMono.ttf",
+      "font_sha256": "54bf827eb99404e8f430c330ad30f063334f637eba0109b6a18d4f566a8e9dd8",
+      "cell_pixels": [
+        15,
+        30
+      ],
+      "background": "#0a111b",
+      "frame_duration_ms": 40,
+      "frames": 60,
+      "playback_kind": "loop",
+      "limitations": [
+        "Fixed-font offscreen preview, not a real terminal recording",
+        "BOLD and DIM are approximated; italics and blink are not simulated",
+        "Unsupported font glyphs may differ from terminal fonts; exact JSON remains authoritative",
+        "GIFs replay observation windows / one-shots where labeled; this does not imply a seamless loop"
+      ]
+    },
+    {
+      "schema": 2,
+      "design": "prism-reveal",
+      "source_sha256": "ade8eed73e7f1dd73c4be24d8a8fd77b6242083802c8ce47a4d53784c837bb47",
+      "capture_sha256": "67971aede9681af3b7cd346d0ba3214df286e42f8800ebf5f7f77e5f06db7fcd",
+      "renderer": "scripts/render_previews.py",
+      "renderer_sha256": "a67bc9b92c14f7b164f89c97a11e11ff8b0ff847068edfd0fdbd525fd66c0f4f",
+      "pillow": "12.3.0",
+      "font": "DejaVuSansMono.ttf",
+      "font_sha256": "54bf827eb99404e8f430c330ad30f063334f637eba0109b6a18d4f566a8e9dd8",
+      "cell_pixels": [
+        15,
+        30
+      ],
+      "background": "#0a111b",
+      "frame_duration_ms": 40,
+      "frames": 45,
+      "playback_kind": "finite-replay",
+      "limitations": [
+        "Fixed-font offscreen preview, not a real terminal recording",
+        "BOLD and DIM are approximated; italics and blink are not simulated",
+        "Unsupported font glyphs may differ from terminal fonts; exact JSON remains authoritative",
+        "GIFs replay observation windows / one-shots where labeled; this does not imply a seamless loop"
+      ]
+    },
+    {
+      "schema": 2,
+      "design": "segmented-comet",
+      "source_sha256": "ade8eed73e7f1dd73c4be24d8a8fd77b6242083802c8ce47a4d53784c837bb47",
+      "capture_sha256": "93b76e8d4d192059a6379a4698350d4abcef0c226603a5ab99c13f25a2210fa0",
+      "renderer": "scripts/render_previews.py",
+      "renderer_sha256": "a67bc9b92c14f7b164f89c97a11e11ff8b0ff847068edfd0fdbd525fd66c0f4f",
+      "pillow": "12.3.0",
+      "font": "DejaVuSansMono.ttf",
+      "font_sha256": "54bf827eb99404e8f430c330ad30f063334f637eba0109b6a18d4f566a8e9dd8",
+      "cell_pixels": [
+        15,
+        30
+      ],
+      "background": "#0a111b",
+      "frame_duration_ms": 40,
+      "frames": 40,
+      "playback_kind": "loop",
+      "limitations": [
+        "Fixed-font offscreen preview, not a real terminal recording",
+        "BOLD and DIM are approximated; italics and blink are not simulated",
+        "Unsupported font glyphs may differ from terminal fonts; exact JSON remains authoritative",
+        "GIFs replay observation windows / one-shots where labeled; this does not imply a seamless loop"
+      ]
+    },
+    {
+      "schema": 2,
+      "design": "telemetry-embers",
+      "source_sha256": "ade8eed73e7f1dd73c4be24d8a8fd77b6242083802c8ce47a4d53784c837bb47",
+      "capture_sha256": "b0812020db2250204514fec6a1329e9858a86f248deb73e5b2a7b03927a9f8e2",
+      "renderer": "scripts/render_previews.py",
+      "renderer_sha256": "a67bc9b92c14f7b164f89c97a11e11ff8b0ff847068edfd0fdbd525fd66c0f4f",
+      "pillow": "12.3.0",
+      "font": "DejaVuSansMono.ttf",
+      "font_sha256": "54bf827eb99404e8f430c330ad30f063334f637eba0109b6a18d4f566a8e9dd8",
+      "cell_pixels": [
+        15,
+        30
+      ],
+      "background": "#0a111b",
+      "frame_duration_ms": 40,
+      "frames": 200,
+      "playback_kind": "observation-window",
+      "limitations": [
+        "Fixed-font offscreen preview, not a real terminal recording",
+        "BOLD and DIM are approximated; italics and blink are not simulated",
+        "Unsupported font glyphs may differ from terminal fonts; exact JSON remains authoritative",
+        "GIFs replay observation windows / one-shots where labeled; this does not imply a seamless loop"
+      ]
+    }
+  ]
+}

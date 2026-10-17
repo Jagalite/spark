@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "telemetry-embers",
+  "title": "Telemetry Embers",
+  "reference": "R04",
+  "visual_revision": 1,
+  "status": "local-implementation-candidate",
+  "implementation": "crates/catalog/src/telemetry_embers.rs",
+  "driver": "caller-level-and-time",
+  "surfaces": [
+    "widget",
+    "scene"
+  ],
+  "geometry": {
+    "preferred": [
+      24,
+      8
+    ],
+    "minimum_full": [
+      8,
+      4
+    ],
+    "composition_cap": [
+      120,
+      40
+    ],
+    "fit": "adaptive",
+    "fallback": "static level marker below scene minimum"
+  },
+  "profiles": [
+    "unicode-truecolor",
+    "ascii-ansi16",
+    "ascii-monochrome"
+  ],
+  "motion": [
+    "full",
+    "reduced",
+    "static"
+  ],
+  "capture_configuration": {
+    "seed": 7,
+    "level": 0.65,
+    "capture_window_ms": 8000,
+    "seamless_loop": false
+  },
+  "source_policy": {
+    "code": "Original local implementation; see PROVENANCE.md",
+    "artwork": "Original project visual study; no external character assets",
+    "license": "MIT"
+  },
+  "evidence": {
+    "exact_cells": "previews/telemetry-embers.cells.json",
+    "fixed_font_preview": "previews/telemetry-embers.gif",
+    "qualification": "qualification/foundation-linux-x86_64/telemetry-embers.json",
+    "visual_review": "Independent fixed-font review completed; see docs/visual-review.md. Native terminal/font qualification remains open.",
+    "platforms": "only observed local checks; see qualification reports"
+  }
+}

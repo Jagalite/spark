@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "pocket-mascot",
+  "title": "Pocket Mascot",
+  "reference": "R05",
+  "visual_revision": 1,
+  "status": "local-implementation-candidate",
+  "implementation": "crates/catalog/src/pocket_mascot.rs",
+  "driver": "authored-frame-holds",
+  "surfaces": [
+    "widget"
+  ],
+  "geometry": {
+    "preferred": [
+      12,
+      6
+    ],
+    "minimum_full": [
+      12,
+      6
+    ],
+    "composition_cap": [
+      12,
+      6
+    ],
+    "fit": "center-native-without-stretching",
+    "fallback": "3x1 static face or point"
+  },
+  "profiles": [
+    "unicode-truecolor",
+    "ascii-ansi16",
+    "ascii-monochrome"
+  ],
+  "motion": [
+    "full",
+    "reduced",
+    "static"
+  ],
+  "capture_configuration": {
+    "seed": null,
+    "frames_source": "catalog/pocket-mascot/frames.json"
+  },
+  "source_policy": {
+    "code": "Original local implementation; see PROVENANCE.md",
+    "artwork": "Original project visual study; no external character assets",
+    "license": "MIT"
+  },
+  "evidence": {
+    "exact_cells": "previews/pocket-mascot.cells.json",
+    "fixed_font_preview": "previews/pocket-mascot.gif",
+    "qualification": "qualification/foundation-linux-x86_64/pocket-mascot.json",
+    "visual_review": "Independent fixed-font review completed; see docs/visual-review.md. Native terminal/font qualification remains open.",
+    "platforms": "only observed local checks; see qualification reports"
+  }
+}

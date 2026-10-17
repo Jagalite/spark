@@ -1,0 +1,25 @@
+{
+  "schema": 2,
+  "design": "segmented-comet",
+  "source_sha256": "ade8eed73e7f1dd73c4be24d8a8fd77b6242083802c8ce47a4d53784c837bb47",
+  "capture_sha256": "93b76e8d4d192059a6379a4698350d4abcef0c226603a5ab99c13f25a2210fa0",
+  "renderer": "scripts/render_previews.py",
+  "renderer_sha256": "a67bc9b92c14f7b164f89c97a11e11ff8b0ff847068edfd0fdbd525fd66c0f4f",
+  "pillow": "12.3.0",
+  "font": "DejaVuSansMono.ttf",
+  "font_sha256": "54bf827eb99404e8f430c330ad30f063334f637eba0109b6a18d4f566a8e9dd8",
+  "cell_pixels": [
+    15,
+    30
+  ],
+  "background": "#0a111b",
+  "frame_duration_ms": 40,
+  "frames": 40,
+  "playback_kind": "loop",
+  "limitations": [
+    "Fixed-font offscreen preview, not a real terminal recording",
+    "BOLD and DIM are approximated; italics and blink are not simulated",
+    "Unsupported font glyphs may differ from terminal fonts; exact JSON remains authoritative",
+    "GIFs replay observation windows / one-shots where labeled; this does not imply a seamless loop"
+  ]
+}

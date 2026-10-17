@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "segmented-comet",
+  "title": "Segmented Comet",
+  "reference": "R01",
+  "visual_revision": 1,
+  "status": "local-implementation-candidate",
+  "implementation": "crates/catalog/src/comet.rs",
+  "driver": "repeating-time",
+  "surfaces": [
+    "widget",
+    "inline"
+  ],
+  "geometry": {
+    "preferred": [
+      24,
+      3
+    ],
+    "minimum_full": [
+      8,
+      1
+    ],
+    "composition_cap": [
+      256,
+      3
+    ],
+    "fit": "adaptive",
+    "fallback": "quiet point below 8 columns"
+  },
+  "profiles": [
+    "unicode-truecolor",
+    "ascii-ansi16",
+    "ascii-monochrome"
+  ],
+  "motion": [
+    "full",
+    "reduced",
+    "static"
+  ],
+  "capture_configuration": {
+    "period_ms": 1600,
+    "seed": 7
+  },
+  "source_policy": {
+    "code": "Original local implementation; see PROVENANCE.md",
+    "artwork": "Original project visual study; no external character assets",
+    "license": "MIT"
+  },
+  "evidence": {
+    "exact_cells": "previews/segmented-comet.cells.json",
+    "fixed_font_preview": "previews/segmented-comet.gif",
+    "qualification": "qualification/foundation-linux-x86_64/segmented-comet.json",
+    "visual_review": "Independent fixed-font review completed; see docs/visual-review.md. Native terminal/font qualification remains open.",
+    "platforms": "only observed local checks; see qualification reports"
+  }
+}

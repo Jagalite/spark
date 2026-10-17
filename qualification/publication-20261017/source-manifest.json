@@ -1,0 +1,282 @@
+{
+  "algorithm": "xtask source_hash (path, NUL, bytes in declared order)",
+  "source_sha256": "921488ce301063f716ba5650c24161ae8023c6bc72db5393f8c0dff71a4dcbf6",
+  "files": [
+    {
+      "path": "crates/runtime/src/lib.rs",
+      "sha256": "3bac8311a7ad2f2bb82a81e898337ebd56d9fd3b068e012b67b071ceb5020889"
+    },
+    {
+      "path": "crates/runtime/src/palette.rs",
+      "sha256": "7d418eb228e25a0ebe230efcd0a88681e6bab464e38e25c40edd82d820244352"
+    },
+    {
+      "path": "crates/runtime/src/playback.rs",
+      "sha256": "22656ff931cecd11dbb295bebd899d77709747b977648a2013425382fbf7b08d"
+    },
+    {
+      "path": "crates/runtime/src/profile.rs",
+      "sha256": "aebc7e15546c43b4cd782d79c3afb75adb0e261c2217d58479478473c44bcf17"
+    },
+    {
+      "path": "crates/runtime/src/repaint.rs",
+      "sha256": "d52e60863d8ed518fa5af7fe802f22df8410262e2d2c330c3f1b35bb419c782d"
+    },
+    {
+      "path": "crates/runtime/src/sprite.rs",
+      "sha256": "f2144b24be8d8d9f2d0e69ca38a9a120915a29cfe13675e6b72b701b08e2bdfd"
+    },
+    {
+      "path": "crates/runtime/src/surface.rs",
+      "sha256": "5c11b3bd5f88e3dde7375a128726873aef1873d1929e78ae3621bf351e7b457d"
+    },
+    {
+      "path": "crates/runtime/src/time.rs",
+      "sha256": "cbe05737be1536ea3778c41b3f95cc4f586bfbe274144ebfef26040485e35ea0"
+    },
+    {
+      "path": "crates/runtime/tests/extension_contract.rs",
+      "sha256": "889ba792fcc44ec1cce36e605324669bb79836b894e6d3ad2e87f4341904d065"
+    },
+    {
+      "path": "crates/runtime/tests/palette.rs",
+      "sha256": "6486772bebd10736f304f8641e30b03e7cbcade89a72cdb1e48671ef05edf5e0"
+    },
+    {
+      "path": "crates/runtime/tests/surface.rs",
+      "sha256": "77457c507f49822fae4ab68a0ed82f1cc2b6c0f0ad5620134d325109220e079a"
+    },
+    {
+      "path": "crates/catalog/src/assembly_progress.rs",
+      "sha256": "cc8784bc42de2828b7642773396fb16eaf065219f52bb7ca24c2b317d5a2022e"
+    },
+    {
+      "path": "crates/catalog/src/border_runner.rs",
+      "sha256": "e6c54445e2be98257afd397e2ba5d8392fb684773ff71bf10631760a2f8ae9c3"
+    },
+    {
+      "path": "crates/catalog/src/comet.rs",
+      "sha256": "417cd14cd372c06f7e60879e64bbdaf387ed8ec1355de0c9597b45628014cd9b"
+    },
+    {
+      "path": "crates/catalog/src/generated/mascot.rs",
+      "sha256": "fd9257fb8679cfe34f315f943bbea9a8de9758b395fc126580eea62e2a431546"
+    },
+    {
+      "path": "crates/catalog/src/inputs.rs",
+      "sha256": "23a623a42d76786597fcd0217df4e6ca7b6852472a45cdba473c1857de0c2d74"
+    },
+    {
+      "path": "crates/catalog/src/lib.rs",
+      "sha256": "0a2b808be290d15882bdbde6b8278ba7c407056d79086935e597739913da0a21"
+    },
+    {
+      "path": "crates/catalog/src/pocket_mascot.rs",
+      "sha256": "0d0784e320e671c952a9549298f5eca801f19f79fa02da8f0f3ddb4a37ddafe4"
+    },
+    {
+      "path": "crates/catalog/src/prism_reveal.rs",
+      "sha256": "fad6d3dbc73166d07e4627968bbf410c3d751ae4fff000e21551634bac772044"
+    },
+    {
+      "path": "crates/catalog/src/telemetry_embers.rs",
+      "sha256": "4af18d0bc8f4b5e9d49c3eb0950f0f290beb29fe8b257c574c5347bd11240848"
+    },
+    {
+      "path": "crates/catalog/tests/breadth_contract.rs",
+      "sha256": "4c9b94ce12e0c1c735129fac5ca3a475b0e8c1d1ed54e4801f5c42b7fe91529c"
+    },
+    {
+      "path": "crates/catalog/tests/contract.rs",
+      "sha256": "48576206b24b0467588b4352d50bf12306b836ec7af02dfb6d2bb574bc34176a"
+    },
+    {
+      "path": "crates/catalog/tests/data_designs.rs",
+      "sha256": "7a2a49483e171c0dc5a020cfb9aef69209dfd3f2496e3a804cba8bd70eab5828"
+    },
+    {
+      "path": "crates/catalog/tests/endurance_lifecycle.rs",
+      "sha256": "356a70bcccf87b9a4c703eea066a5675de938e64eea59bd5347f1c00e77fc424"
+    },
+    {
+      "path": "crates/catalog/tests/host_lifecycle.rs",
+      "sha256": "25a3bb6c276573161417763b751934252fe9f2885fcd57ccbc9263cded8c23b1"
+    },
+    {
+      "path": "crates/catalog/tests/mascot.rs",
+      "sha256": "36fe5a0235b76c757973a6ab5c4cbead92c67cb3b612665dd7d3e05bed98bd8c"
+    },
+    {
+      "path": "crates/catalog/examples/async_host.rs",
+      "sha256": "fe76169d9d8afee7fb2c92e700b64b780d234e759a82b7848507235b96cc74d1"
+    },
+    {
+      "path": "crates/catalog/examples/paced_host.rs",
+      "sha256": "a958ed2229b9887d2a8533fd8e0c294659943c475c1c7326db6265e7d09cdb19"
+    },
+    {
+      "path": "crates/catalog/examples/support/mod.rs",
+      "sha256": "cadc8c1bad9e338079c649cd8f19fc5eff2d3a5beeca0e28b7492811de855f93"
+    },
+    {
+      "path": "crates/catalog/examples/sync_host.rs",
+      "sha256": "918c8427ce8d8d87e71822ba39c2b300d69930c2583c5a075beb79cb9a359af7"
+    },
+    {
+      "path": "fixtures/consumer/src/main.rs",
+      "sha256": "f88187b9cfee4f624ff3c12fcd6947687ccd616136fde74b88a1ba33dbcc0c78"
+    },
+    {
+      "path": "fixtures/consumer-all/src/main.rs",
+      "sha256": "537fa9ae11a52dc202757a91dc2aa9bbb474c130cbe67494d7139c76ba608444"
+    },
+    {
+      "path": "fixtures/holdout/src/lib.rs",
+      "sha256": "b496097c01d5b1eb3f41a6588a7d6b6b46bc96d9757863b91795b728f0982efa"
+    },
+    {
+      "path": "fixtures/holdout/src/main.rs",
+      "sha256": "495404f73d4603b9c53d3f1824a02925e9dc07abad8294fd784e96b098744f7a"
+    },
+    {
+      "path": "fixtures/holdout/tests/public_api.rs",
+      "sha256": "02e205acf196df76989ff7890a59c2bba0b03fb738b33c94e4d28d1b25494935"
+    },
+    {
+      "path": "apps/gallery/src/app.rs",
+      "sha256": "1a2f65dfb1beda8cb883f094f369b032ba17ae371d4509ee5c96faba13579c50"
+    },
+    {
+      "path": "apps/gallery/src/design.rs",
+      "sha256": "3b78bac8198757861d63b2ae675ad6a79527009c2c68ccf97d46e4587f1c4103"
+    },
+    {
+      "path": "apps/gallery/src/main.rs",
+      "sha256": "dd2dc12a9d7cac9895614113daa71ab864d6124f06b18ee0ed0e64db08bd8e6e"
+    },
+    {
+      "path": "apps/gallery/src/pacing.rs",
+      "sha256": "9bf9202dc9e75c73381650ebcc0689c58c549a986c841c23d1f3ea44a55125d8"
+    },
+    {
+      "path": "apps/gallery/src/view.rs",
+      "sha256": "242d2fccc579f1fb01b3bb640a04da2acde03e44b369ca4943fd3d1be1dcadc2"
+    },
+    {
+      "path": "xtask/src/assets.rs",
+      "sha256": "bb2b5f493e0dff3c4019df3049b9dfd62fdd9ee60b8e1c7b07ef4cc5ab6d19cd"
+    },
+    {
+      "path": "xtask/src/main.rs",
+      "sha256": "cc93545e9ae23bfb199c112be60f771f285f6febbd017552bce31c5d9e71d73d"
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "b48f85aed49169be5538b2da72f36f20a2f46075afd72b0cdf601a82fd543f33"
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "b45683650c15ac53b8d18c9f266280af7389f2f060e58143dbefe8bb596417be"
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "sha256": "c33d1f0b1b8fda448bea32d7dc867aa64947c87169fd9de7122ffccad1dd80f9"
+    },
+    {
+      "path": "crates/runtime/Cargo.toml",
+      "sha256": "6b6a3446abc6ff159c1d6acc887306a3740bebed08207e765444fb07bddab205"
+    },
+    {
+      "path": "crates/catalog/Cargo.toml",
+      "sha256": "3f2d0ef20bea638e7f561173ca4acdf4ebf9563586e5727c893560046ea6353d"
+    },
+    {
+      "path": "apps/gallery/Cargo.toml",
+      "sha256": "f8105f6bb5a91f59a1dba8b897d5adebf12f69b611c60d2aca5b97deacdb4924"
+    },
+    {
+      "path": "xtask/Cargo.toml",
+      "sha256": "7a213d9c59d8beb048917a284f94cd939e08c618b4433e0d3bb8024703f4b014"
+    },
+    {
+      "path": "fixtures/consumer/Cargo.toml",
+      "sha256": "1c34d65955fcfc4bd6414e9efc34b70221a5089529bf8e534110b3750473e10e"
+    },
+    {
+      "path": "fixtures/consumer/Cargo.lock",
+      "sha256": "4ade9d1c3ea2d88046bc7c5b02c980b8fc1534eb4f87682e7edc45007899cb38"
+    },
+    {
+      "path": "fixtures/consumer-all/Cargo.toml",
+      "sha256": "a0797ad9abff9d4fc74d840e39a68ebc75df7693acc431075fa4090de5a7de68"
+    },
+    {
+      "path": "fixtures/consumer-all/Cargo.lock",
+      "sha256": "8384ed12aa083af0fa457a772fd8f28a74a2adbd877804f34076bc62b107f06b"
+    },
+    {
+      "path": "fixtures/holdout/Cargo.toml",
+      "sha256": "1b92764bbc0b4d0386b77816ad37fcefff25be74488e1eb27aa4e0ac0c006035"
+    },
+    {
+      "path": "fixtures/holdout/Cargo.lock",
+      "sha256": "6cae6603aecfe6e3ada2f8a85b70f0ff4648363c517018f137aef448b1338442"
+    },
+    {
+      "path": "fixtures/cells/segmented-comet.json",
+      "sha256": "91ad96ad265ccc4779ba2b1966d25069b7d3166da64dd9de45b67e968b9eade9"
+    },
+    {
+      "path": "fixtures/cells/foundation-six.json",
+      "sha256": "baa680f4edb124b02a7185783415b929d78ced348108b1fa00a2cd91c6e8e156"
+    },
+    {
+      "path": ".cargo/config.toml",
+      "sha256": "58240f7afb302af6a859a152d614e84a1519e422145b9e5d51cbd7d13eb5cc9a"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "581ad9857df041b1b0d3f8e8718f700830cdf051ff160360ecbf33b23d04b64c"
+    },
+    {
+      "path": "scripts/render_previews.py",
+      "sha256": "a67bc9b92c14f7b164f89c97a11e11ff8b0ff847068edfd0fdbd525fd66c0f4f"
+    },
+    {
+      "path": "scripts/capture_terminal.py",
+      "sha256": "0bdd37c64c2a532759cd641acfd6a0336f5c5d237559c2333b72a1a1edc957ca"
+    },
+    {
+      "path": "scripts/qualify_host_endurance.py",
+      "sha256": "c5f11edc35e4266c8e3890ab40d3db8f5eeef8ec3cbf0baed69b5357aedc6633"
+    },
+    {
+      "path": "catalog/pocket-mascot/frames.json",
+      "sha256": "e1e4ae574a765e819b547be22f4cdf05d2816c7abf7b33cd8f5024cf86ce0e35"
+    },
+    {
+      "path": "catalog/segmented-comet/manifest.json",
+      "sha256": "667031b220e615340a23b021c47087a95eedb2dc6b1176acc915e7629738a03e"
+    },
+    {
+      "path": "catalog/assembly-progress/manifest.json",
+      "sha256": "81b9981dbb896d3237a6183a99b989712d65c23101e86294d66dcffe13c62610"
+    },
+    {
+      "path": "catalog/border-runner/manifest.json",
+      "sha256": "3390088453494260a6347b59afb1e949895dd35787c18b413a231687c54b8403"
+    },
+    {
+      "path": "catalog/telemetry-embers/manifest.json",
+      "sha256": "aea3b86e224e1a25677d53004fc3e9ee443dcc080ecafd6e455b8082d532ebaf"
+    },
+    {
+      "path": "catalog/pocket-mascot/manifest.json",
+      "sha256": "d9a6c9c82cdc2d8a8ec2b8bd5bd9c0442d8da128da776cd47e05ce9dfdf0ef36"
+    },
+    {
+      "path": "catalog/prism-reveal/manifest.json",
+      "sha256": "34a7939b44ea7aa214f557b344a9bf0e514abf986806226c240cadf936a18752"
+    }
+  ]
+}

@@ -2,74 +2,91 @@
 
 **Small terminal art. Your app keeps the controls.**
 
-A Rust / Ratatui animated-art experiment with explicit-time sampling, a borrowed
-widget view, and permission-limited cell writes. This is the **F01–F06 foundation
-vertical slice**, not the full six-design v0.1 release. The only implemented design
-is R01, Segmented Comet.
+Six distinctive Rust/Ratatui designs, sampled at explicit time and embedded through
+ordinary widgets, inline text and permission-limited decorators. The host keeps its
+event loop, state, data and terminal. No AI service, renderer-owned clock, IO, thread
+or mandatory async runtime.
 
-![Actual Segmented Comet loop](previews/segmented-comet.gif)
+**Status: MIT-licensed foundation source candidate.** All six designs are implemented.
+See [publication verification](docs/publication.md) for the current checks and
+[foundation status](docs/foundation-status.md) for historical evidence and remaining
+platform/release gates. The crates are not published to a registry.
 
-*Generated from the same Rust cells used by consumers. Fixed DejaVu Sans Mono
-preview, not a claim about every terminal/font.*
+![Six actual Rust-rendered designs](previews/catalog-contact-sheet.png)
 
-## Run it
+Fixed DejaVu Sans Mono previews from real consumer cells, not promotional mockups
+or a claim about every terminal/font.
+
+## Try the gallery
+
+Install Rust with rustup, then clone and run (the toolchain file pins Rust 1.90.0):
 
 ```sh
+git clone https://github.com/Jagalite/spark.git
+cd spark
 cargo run -p spark-gallery
-cargo run -p spark-catalog --example sync_host
+cargo run -p spark-gallery -- --smoke
 ```
 
-Rust **1.90.0**, `ratatui-core` **0.1.2**, and application `ratatui` **0.30.2** are
-pinned and exercised together. The renderer owns no clock, terminal IO, threads,
-network calls, or scheduler. It needs no AI service, special font, or async runtime.
+Choose a design; pause/restart/scrub; change size, palette, capability profile,
+speed, seed and input; inspect static or embedded views. Inactive designs do not
+animate in the selector. Run `--help` for current controls.
 
-## Embed it
+Rust **1.90.0**, `ratatui-core` **0.1.2** and application `ratatui` **0.30.2** are pinned.
+See [compatibility](docs/compatibility.md) for tested and unqualified routes.
 
-Store a `SegmentedComet` in your host. Supply clip time on each draw:
+## Six compositions
+
+- **Segmented Comet:** broken luminous trail, widget or exact-width styled `Line`
+- **Assembly Progress:** conveyor/gantry controlled by truthful known/unknown progress
+- **Border Runner:** restrained style-only perimeter highlight with explicit exclusions
+- **Telemetry Embers:** seeded rising particles controlled by caller-supplied level
+- **Pocket Mascot:** original authored ASCII creature with held, blink and squash poses
+- **Prism Reveal:** finite text sweep, final readable pose and safe Unicode fallback
+
+Profiles include ASCII/Unicode, truecolor/ANSI16/monochrome and full/reduced/static
+motion. Wide host glyphs, selected cells, titles and reserved rectangles are protected.
+No per-design crates, mandatory registry, font icons or image protocols.
+
+## Embed one design
 
 ```rust
 use spark_catalog::SegmentedComet;
 use spark_runtime::{ClipTime, Palette, Profile, SampleContext};
 
-let comet = SegmentedComet::new().with_seed(7);
+let comet = SegmentedComet::new().with_seed(7); // Store once.
 let palette = Palette::default();
 let profile = Profile::default();
 let context = SampleContext::new(
-    ClipTime::from_nanos(400_000_000),
-    &palette,
-    &profile,
+    ClipTime::from_nanos(400_000_000), &palette, &profile,
 );
-let sample = comet.sample(&context);
+let sample = comet.sample(&context); // Borrowed, no hidden state advancement.
 // frame.render_widget(sample, caller_owned_area);
-// sample.frame_interval(caller_owned_area.size()) is advisory only.
+// sample.change_hint(caller_owned_area.as_size()) is optional advice.
+let status_line = sample.inline(24).expect("width at most 256");
 ```
 
-The complete buffer version is a compiled rustdoc example. The standalone
-[external consumer](fixtures/consumer/src/main.rs) also implements a different
-widget through public runtime APIs, without a runtime modification.
+The buffer form is compiled as a rustdoc test. Separate
+[one-design](fixtures/consumer/src/main.rs) and
+[all-six](fixtures/consumer-all/src/main.rs) consumers compile against public APIs.
+The independent [CrossWeave holdout](fixtures/holdout/src/main.rs) authors a new
+design with runtime-only dependencies and no runtime change.
 
-A sample can be requested twice, backwards, or at a large timestamp without
-advancing state. Keep rendering paused/static art on unrelated redraws. Render
-base content freshly; give art an owned rectangle and explicit protected regions.
-Wide host glyphs and special diff cells are conservatively preserved.
+## Host-owned integration
 
-## What is here
+```sh
+cargo run -p spark-catalog --example sync_host -- --smoke
+cargo run -p spark-catalog --example async_host -- --smoke
+cargo run -p spark-catalog --example paced_host -- --smoke
+```
 
-- Four workspace packages: runtime, catalog, native gallery, and `xtask`
-- Validated integer clip time/period, palette overrides, ASCII/Unicode,
-  truecolor/ANSI-16/monochrome, full/reduced/static motion
-- One adaptive segmented comet with a borrowed ordinary `Widget` view
-- Clipping/protection/wide-character tests, exact styled-cell snapshots,
-  shuffled-time tests, compiled host and downstream examples
-- Actual loop/contact-sheet/embedding previews and an explicitly limited baseline
-- Six design briefs, provenance policy, author template, and architecture decisions
+The synchronous, async event and already-paced examples render the same designs.
+Optional playback maps caller-supplied host time to clip time; a pure planner merges
+advice with the host's own cadence. Paused, hidden, static and finished visuals stop
+requesting animation frames but still draw on unrelated redraws. Rendering never
+completes business operations. See [integration](docs/integration.md).
 
-Inline output, decorators, the other five designs, asset playback, general
-playback/deadline helpers, async/paced hosts, and release qualification are deferred.
-
-![Synthetic host embedding](previews/embedded.png)
-
-## Check and reproduce
+## Verify and reproduce
 
 ```sh
 cargo fmt --all -- --check
@@ -78,19 +95,25 @@ cargo test --workspace --all-targets --locked
 cargo test --workspace --doc --locked
 cargo xtask validate
 cargo xtask snapshots --check
-cargo run -p spark-gallery -- --smoke
-cargo run -p spark-catalog --example sync_host -- --smoke
-cargo run --manifest-path fixtures/consumer/Cargo.toml --locked
-cargo xtask render segmented-comet
+cargo xtask generate-assets --check
+cargo xtask render pocket-mascot --fixture request-result
+cargo xtask record pocket-mascot
+cargo xtask qualify pocket-mascot
+cargo xtask package-audit
 cargo xtask baseline
 ```
 
-See [compatibility](docs/compatibility.md), [performance and capture methods](docs/performance.md),
-[API review](docs/api-review.md), [integration](docs/integration.md),
-[architecture and roadmap](docs/architecture.md), and [authoring](docs/authoring.md).
+The tools report missing checks rather than manufacture a passing release badge.
+Git retains required regression goldens, six full GIFs, the overview and directly
+linked review images. Bulk exact-cell captures, other generated derivatives, raw
+recordings, detailed historical machine reports and logs are private archival or
+reproducible outputs, as explained in
+[ARTIFACTS](ARTIFACTS.md). [Performance](docs/performance.md) names measured stages and omissions.
+[Authoring](docs/authoring.md) covers validated assets and review guardrails.
 
-## Status and terms
+## Terms
 
-Provisional local package names; packages are not published. No project license
-has been selected or granted. Repository source commits are authorized; a package
-release and distribution terms remain an owner decision. See [PROVENANCE](PROVENANCE.md).
+Licensed under [MIT](LICENSE), with [third-party notices](NOTICE.md). Code and visual
+provenance are tracked separately in [PROVENANCE](PROVENANCE.md). Public registry
+names and package releases remain separate decisions; all packages retain
+`publish = false`. CI validates source changes but does not deploy or publish packages.

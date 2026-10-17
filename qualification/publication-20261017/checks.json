@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-17",
+  "source_sha256": "921488ce301063f716ba5650c24161ae8023c6bc72db5393f8c0dff71a4dcbf6",
+  "platform": "Linux x86_64",
+  "status": "passed",
+  "checks": [
+    {
+      "command": "cargo fmt --all -- --check",
+      "exit_code": 0,
+      "elapsed_seconds": 0.172
+    },
+    {
+      "command": "cargo clippy --workspace --all-targets --locked -- -D warnings",
+      "exit_code": 0,
+      "elapsed_seconds": 6.37
+    },
+    {
+      "command": "cargo test --workspace --all-targets --locked",
+      "exit_code": 0,
+      "elapsed_seconds": 36.604
+    },
+    {
+      "command": "cargo test --workspace --doc --locked",
+      "exit_code": 0,
+      "elapsed_seconds": 0.364
+    },
+    {
+      "command": "cargo xtask validate",
+      "exit_code": 0,
+      "elapsed_seconds": 13.763
+    },
+    {
+      "command": "cargo xtask snapshots --check",
+      "exit_code": 0,
+      "elapsed_seconds": 0.105
+    },
+    {
+      "command": "cargo xtask generate-assets --check",
+      "exit_code": 0,
+      "elapsed_seconds": 0.077
+    },
+    {
+      "command": "cargo run -p spark-gallery --locked -- --smoke",
+      "exit_code": 0,
+      "elapsed_seconds": 4.632
+    },
+    {
+      "command": "cargo run -p spark-catalog --example sync_host --locked -- --smoke",
+      "exit_code": 0,
+      "elapsed_seconds": 1.129
+    },
+    {
+      "command": "cargo run -p spark-catalog --example async_host --locked -- --smoke",
+      "exit_code": 0,
+      "elapsed_seconds": 1.465
+    },
+    {
+      "command": "cargo run -p spark-catalog --example paced_host --locked -- --smoke",
+      "exit_code": 0,
+      "elapsed_seconds": 2.538
+    },
+    {
+      "command": "cargo run --manifest-path fixtures/consumer/Cargo.toml --locked",
+      "exit_code": 0,
+      "elapsed_seconds": 6.064
+    },
+    {
+      "command": "cargo run --manifest-path fixtures/consumer-all/Cargo.toml --locked",
+      "exit_code": 0,
+      "elapsed_seconds": 5.618
+    },
+    {
+      "command": "cargo test --manifest-path fixtures/holdout/Cargo.toml --locked",
+      "exit_code": 0,
+      "elapsed_seconds": 4.12
+    },
+    {
+      "command": "cargo check -p spark-runtime -p spark-catalog --target wasm32-unknown-unknown --locked",
+      "exit_code": 0,
+      "elapsed_seconds": 3.722
+    },
+    {
+      "command": "python3 qualification/endurance-linux-x86_64/test_harness_guards.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.056
+    },
+    {
+      "command": "cargo metadata --no-deps --locked --format-version 1",
+      "exit_code": 0,
+      "elapsed_seconds": 0.029
+    }
+  ],
+  "limits": [
+    "No fresh full-host endurance measurement",
+    "No physical terminal/font, macOS, Windows or browser-WASM execution in this local run",
+    "No universal performance/release claim"
+  ],
+  "tests": {
+    "workspace": 115,
+    "rustdoc": 1,
+    "holdout": 5,
+    "python_harness_guards": 7
+  },
+  "review": "Bounded independent source-publication review: no blocker found; not exhaustive security/IP clearance",
+  "source_only_export_checks": {
+    "status": "passed",
+    "checks": [
+      "cargo xtask validate",
+      "cargo xtask snapshots --check",
+      "cargo xtask generate-assets --check",
+      "python3 qualification/endurance-linux-x86_64/test_harness_guards.py"
+    ],
+    "scope": "Clean tracked-only checkout with all historical machine/PTY reports absent"
+  }
+}

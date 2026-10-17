@@ -1,0 +1,5652 @@
+{
+  "design": "segmented-comet",
+  "frames": [
+    {
+      "cells": {
+        "area": [
+          0,
+          0,
+          24,
+          3
+        ],
+        "rows": [
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "◆",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ]
+        ]
+      },
+      "time_ms": 0
+    },
+    {
+      "cells": {
+        "area": [
+          0,
+          0,
+          24,
+          3
+        ],
+        "rows": [
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "◆",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ]
+        ]
+      },
+      "time_ms": 1
+    },
+    {
+      "cells": {
+        "area": [
+          0,
+          0,
+          24,
+          3
+        ],
+        "rows": [
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "◆",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ]
+        ]
+      },
+      "time_ms": 200
+    },
+    {
+      "cells": {
+        "area": [
+          0,
+          0,
+          24,
+          3
+        ],
+        "rows": [
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "◆",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ]
+        ]
+      },
+      "time_ms": 400
+    },
+    {
+      "cells": {
+        "area": [
+          0,
+          0,
+          24,
+          3
+        ],
+        "rows": [
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "◆",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ]
+        ]
+      },
+      "time_ms": 800
+    },
+    {
+      "cells": {
+        "area": [
+          0,
+          0,
+          24,
+          3
+        ],
+        "rows": [
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "◆",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ]
+        ]
+      },
+      "time_ms": 1200
+    },
+    {
+      "cells": {
+        "area": [
+          0,
+          0,
+          24,
+          3
+        ],
+        "rows": [
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "◆",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ]
+        ]
+      },
+      "time_ms": 1599
+    },
+    {
+      "cells": {
+        "area": [
+          0,
+          0,
+          24,
+          3
+        ],
+        "rows": [
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "◆",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ]
+        ]
+      },
+      "time_ms": 1600
+    },
+    {
+      "cells": {
+        "area": [
+          0,
+          0,
+          24,
+          3
+        ],
+        "rows": [
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "◆",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            }
+          ],
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(46, 207, 225)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ]
+        ]
+      },
+      "time_ms": 1601
+    },
+    {
+      "cells": {
+        "area": [
+          0,
+          0,
+          16,
+          1
+        ],
+        "rows": [
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": ".",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": ".",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": "-",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": ".",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": "-",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": "-",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": ".",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 1,
+              "symbol": "=",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 1,
+              "symbol": "=",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 1,
+              "symbol": ">",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ]
+        ]
+      },
+      "profile": "ascii-mono-static",
+      "time_ms": 800
+    },
+    {
+      "cells": {
+        "area": [
+          0,
+          0,
+          16,
+          1
+        ],
+        "rows": [
+          [
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(155, 181, 208)",
+              "modifiers": 0,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "━",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(230, 255, 246)",
+              "modifiers": 1,
+              "symbol": "◆",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Rgb(49, 70, 97)",
+              "modifiers": 0,
+              "symbol": "·",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            },
+            {
+              "bg": "Reset",
+              "diff": "None",
+              "fg": "Reset",
+              "modifiers": 0,
+              "symbol": " ",
+              "underline_color": "Reset"
+            }
+          ]
+        ]
+      },
+      "profile": "reduced",
+      "time_ms": 800
+    }
+  ],
+  "period_ms": 1600,
+  "schema": 1,
+  "seed": 7,
+  "visual_revision": 1
+}

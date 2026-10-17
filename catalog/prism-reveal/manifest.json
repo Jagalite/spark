@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "prism-reveal",
+  "title": "Prism Reveal",
+  "reference": "R06",
+  "visual_revision": 1,
+  "status": "local-implementation-candidate",
+  "implementation": "crates/catalog/src/prism_reveal.rs",
+  "driver": "finite-time",
+  "surfaces": [
+    "masked-text",
+    "style-only-fallback"
+  ],
+  "geometry": {
+    "preferred": [
+      24,
+      3
+    ],
+    "minimum_full": [
+      1,
+      1
+    ],
+    "composition_cap": [
+      256,
+      1
+    ],
+    "fit": "requested-text-origin",
+    "fallback": "unsupported text keeps host glyphs, style only"
+  },
+  "profiles": [
+    "unicode-truecolor",
+    "ascii-ansi16",
+    "ascii-monochrome"
+  ],
+  "motion": [
+    "full",
+    "reduced",
+    "static"
+  ],
+  "capture_configuration": {
+    "duration_ms": 1200,
+    "seed": null,
+    "text": "SIGNAL RESTORED"
+  },
+  "source_policy": {
+    "code": "Original local implementation; see PROVENANCE.md",
+    "artwork": "Original project visual study; no external character assets",
+    "license": "MIT"
+  },
+  "evidence": {
+    "exact_cells": "previews/prism-reveal.cells.json",
+    "fixed_font_preview": "previews/prism-reveal.gif",
+    "qualification": "qualification/foundation-linux-x86_64/prism-reveal.json",
+    "visual_review": "Independent fixed-font review completed; see docs/visual-review.md. Native terminal/font qualification remains open.",
+    "platforms": "only observed local checks; see qualification reports"
+  }
+}

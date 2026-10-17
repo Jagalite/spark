@@ -1,0 +1,36 @@
+name: foundation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  native:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Rust
+        run: rustup toolchain install 1.90.0 --profile minimal --component rustfmt --component clippy
+      - run: cargo fmt --all -- --check
+      - run: cargo clippy --workspace --all-targets --locked -- -D warnings
+      - run: cargo test --workspace --all-targets --locked
+      - run: cargo test --workspace --doc --locked
+      - run: cargo xtask validate
+      - run: cargo xtask snapshots --check
+      - run: cargo xtask generate-assets --check
+      - run: cargo run -p spark-gallery --locked -- --smoke
+      - run: cargo run -p spark-catalog --example sync_host --locked -- --smoke
+      - run: cargo run -p spark-catalog --example async_host --locked -- --smoke
+      - run: cargo run -p spark-catalog --example paced_host --locked -- --smoke
+      - run: cargo run --manifest-path fixtures/consumer/Cargo.toml --locked
+      - run: cargo run --manifest-path fixtures/consumer-all/Cargo.toml --locked
+      - run: cargo test --manifest-path fixtures/holdout/Cargo.toml --locked
+      - run: cargo run --manifest-path fixtures/holdout/Cargo.toml --locked
+  wasm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup toolchain install 1.90.0 --profile minimal --target wasm32-unknown-unknown
+      - run: cargo check -p spark-runtime -p spark-catalog --target wasm32-unknown-unknown --locked

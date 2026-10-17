@@ -1,0 +1,65 @@
+# Provenance and publication status
+
+## Current terms, 2026-10-17
+
+The owner selected MIT and authorized public source publication to Jagalite/spark.
+[LICENSE](LICENSE) covers original project code, docs and authored assets;
+[NOTICE](NOTICE.md) preserves third-party terms. This supersedes the earlier
+unselected-license/publication restriction below. The earlier record is retained
+for provenance, not as the current license policy. No package release or name
+clearance is implied.
+
+## Historical record (2026-10-14)
+
+## Project terms
+
+**Packages unpublished; no project license has been selected or granted.** The supplied assignment authorizes local implementation and review, not choosing a distribution license or publishing a package release. The continuation beyond the reviewed first slice is local while repository publication is blocked; it does not grant permission to change a remote or publish elsewhere. Code, documentation, procedural artwork, and generated previews remain pending an owner decision. This policy does not assert copyright protection or ownership for every generated element.
+
+Do not infer a license from a public package name, repository visibility, generated file, or dependency. Third-party packages retain their own terms. Before a package release, resolve code and artwork terms separately, retain required third-party notices, add approved license files/metadata, and obtain explicit owner approval.
+
+See [ADR 0004](docs/decisions/0004-licensing-and-provenance.md) for the decision and [authoring](docs/authoring.md) for contribution gates.
+
+## Source brief
+
+- Title: *Ratatui Animated Art — Foundation-First Project Plan*
+- Version/date: 1.0, October 12, 2026
+- Origin: supplied by the repository owner for this implementation assignment
+- Scope used: the reviewed F01–F06 slice, authorized local continuation of the foundation, architectural constraints, all six reference briefs, and acceptance gates
+- Author and distribution license: not supplied in the implementation brief
+- Use: requirements and design direction; not evidence of completed benchmarks, integrations, or broad compatibility
+
+The brief cites earlier research/integration documents. Those documents were not independently inspected in this documentation task; their claims are not being reissued as new audits. The brief's upstream links explain its planning lineage, not this checkout's tested dependency support.
+
+## Project-created materials
+
+| Material | Origin and assistance | Status / limits |
+| --- | --- | --- |
+| Rust runtime, catalogue, host examples, gallery, and build/tooling code | Newly prepared for this repository from the supplied plan with AI assistance; explicit-time sampling, constrained writes, and ordinary Ratatui public APIs | Inspect source and recorded tests; no automatic originality, legal clearance, broad support, or publication claim |
+| R01 Segmented Comet (`crates/catalog/src/comet.rs`) | Original code-driven segmented glowing trail from the plan's direction; locally extended with an inline view | First-slice independent review is recorded in `docs/api-review.md`; later changes and new captures require current evidence |
+| R02 Assembly Progress (`crates/catalog/src/assembly_progress.rs`) | Newly authored procedural gantry, blueprint slots, and conveyor composition using caller-supplied progress | No imported machine image, sprite sheet, or external artwork; see its brief for truthful-input and review limits |
+| R03 Border Runner (`crates/catalog/src/border_runner.rs`) | Newly authored procedural highlight and fading border trail over host-owned glyphs | No imported artwork; a common perimeter concept is not a claim of exclusive visual ownership |
+| R04 Telemetry Embers (`crates/catalog/src/telemetry_embers.rs`) | Newly authored bounded analytic spark/plume composition driven by caller-supplied level and seed | No particle texture, image, or frame asset imported; an observation-window capture is not a seamless-loop claim |
+| R05 Pocket Mascot (`catalog/pocket-mascot/frames.json`) | Eight newly drawn ASCII seed-pod creature poses and unequal staged holds, authored with AI assistance on 2026-10-14 from the supplied R05 brief | No external character, sprite sheet, image, or source frame was copied/imported; independent visual/legal clearance is not implied |
+| R05 generated data (`crates/catalog/src/generated/mascot.rs`) | Deterministic translation of the editable frame source by `xtask/src/assets.rs`; explicit keep/erase/replace instructions and palette roles | Generated data retains the source artwork's unresolved terms; generation/drift checks establish consistency, not rights |
+| R06 Prism Reveal (`crates/catalog/src/prism_reveal.rs`) | Newly authored finite text highlight/masked reveal with a glyph-preserving fallback | No imported artwork or text content beyond documented synthetic fixture/example strings; host text remains caller-owned |
+| Briefs, architecture/ADRs, authoring policy, and templates | Adapted from supplied requirements and actual local implementation with AI assistance | Implementation, independent review, measurements, and release acceptance are recorded separately |
+| Offscreen snapshots and preview derivatives | Captured through the same Rust design implementation consumers call, then rendered by local inspection tools | Source/configuration linkage belongs with each capture; fixed-font appearance and license claims cannot exceed the source |
+
+No third-party art, character, font file, or asset pack is bundled. Fixed-font previews are rendered with the installed DejaVu Sans Mono; the font itself is not redistributed. The font name/hash and image-renderer version are recorded in previews/render-manifest.json. If one is introduced, record the exact source, creator if known, applicable terms, transformation, and permission evidence before accepting it. “AI-generated” alone is not evidence of freedom from third-party restrictions.
+
+## Dependencies and external material
+
+`Cargo.toml` and `Cargo.lock` are the source of truth for selected/resolved dependencies. Dependency license metadata does not license this project. Keep backend, encoder, CLI, and qualification-tool dependencies out of production libraries unless explicitly justified. The eventual package audit must review what is actually redistributed, including bundled data and required notices.
+
+Do not copy upstream source examples or assets without recording that use and preserving any required attribution. Ordinary links or API references are not a statement that upstream endorses Spark.
+
+## Evidence still required before release
+
+- Repository-owner selection of project code, documentation, and artwork terms
+- Approved license files and package metadata, and explicit publication approval
+- Per-entry provenance review, including any imports introduced during implementation
+- Dependency/package redistribution and notice review for actual shipped contents
+- Capture records tied to the final source revision and configuration
+- Independent visual/API review and remaining foundation acceptance gates, with unrun or unmeasured stages explicit
+
+Use [the provenance entry template](templates/provenance-entry.md) when adding material. Preserve uncertainty rather than filling an unknown field with a guessed license, author, or approval.
