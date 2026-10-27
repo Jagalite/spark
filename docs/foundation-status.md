@@ -48,20 +48,27 @@ Native CI now also runs package-audit, while the new capture regressions run on
 Linux. A final revision's remote result must be checked separately; these local
 results are not a predeclared green remote build.
 
-### Remaining acceptance evidence
+### Remaining acceptance evidence and execution blocks
 
-- Named terminal and font, with actual visual review, on Linux, macOS and Windows.
-- A tmux/remote-session smoke before claiming either route.
-- Real terminal-emulator CPU/latency measurements; PTYs and offscreen images are
-  explicitly not substitutes.
-- Any package release requires separate approval and tested package/public-name
-  decisions. Browser playback and native/WASM exact-cell equality remain optional,
-  unqualified routes, not silently inferred from compilation.
+| Plan requirement | Result / smallest remaining action |
+| --- | --- |
+| F19 native Linux/macOS/Windows build and test matrix | Passed at the linked main revision; this repair also runs exact-commit native CI |
+| F18 actual recordings, exact cells and independent art review | Existing reviewed full/slowed offscreen previews retained; fresh Linux PTY recording and integrity tests pass; neither establishes emulator/font appearance |
+| F19 named terminal/font combination on each native OS | **Blocked, not passed.** Linux graphical startup was attempted using installed Xorg dummy, Xfce Terminal and DejaVu Sans Mono; the sandbox could not create local display sockets. The supported escalation attempt failed before execution. No graphical recording, screenshot or visual result was obtained. An approved graphical-enabled executor is needed. macOS/Windows graphical hosts are unavailable in this task |
+| Section 11 actual terminal-emulator CPU measurement | **Blocked with the graphical route.** Offscreen renderer/backend and PTY host measurements exist, but no new emulator process ran. Run the same no-art/static/animated fixture in the approved named emulator and record scoped process measurements |
+| tmux/remote-session route | **Not claimed.** The plan requires a smoke before claiming such a route; no tmux/SSH route has been qualified. Tool availability discovery was blocked by system package-index access, and no restriction was bypassed |
+| F22 full foundation release acceptance | **Open on the named-emulator gates above.** Source candidate, public docs and holdout exist; source completion is not blanket platform acceptance |
+| Registry/package release, tags, deployment | Not performed; separate explicit approval and public-name/package decisions are required, not inferred from permission to commit source |
+| Browser playback, native/WASM cell equality | Optional unqualified routes; compilation does not establish either |
 
-The available cloud executor can produce Linux PTY evidence but cannot establish
-human visual acceptance on three physical native terminal/font installations.
-No unrun external gate is checked off. Historical reports below retain their dates
-and original scope rather than being rewritten as new measurements.
+This is the minimal remaining platform distinction: CI can run native tests, and
+a cloud PTY can verify protocol/control behavior, but neither demonstrates a named
+emulator's font shaping or measures that emulator. A graphical-enabled cloud host
+could meaningfully close the Linux route; physical display hardware is not itself
+a requirement. The attempted environment cannot currently start that display.
+No unrun gate is checked off and no permission restriction was worked around.
+Historical reports below retain their dates and scope rather than being rewritten
+as fresh measurements.
 
 ## Current source publication, 2026-10-17
 
