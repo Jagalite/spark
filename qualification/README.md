@@ -1,7 +1,8 @@
 # Qualification scope
 
-[Current source checks](publication-20261017/checks.json) record the fresh Linux
-validation for this source tree. The independent harness guard test remains in
+[Historical publication checks](publication-20261017/checks.json) record Linux
+validation for the October 17 publication candidate, not every later source tree.
+See [current acceptance status](../docs/foundation-status.md) for remote CI evidence. The independent harness guard test remains in
 `endurance-linux-x86_64/test_harness_guards.py`; it tests the canonical source
 script, not archived process recordings.
 

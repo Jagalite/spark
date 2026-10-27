@@ -52,6 +52,8 @@ cargo fmt --manifest-path fixtures/extension-starter/Cargo.toml -- --check
 cargo clippy --manifest-path fixtures/extension-starter/Cargo.toml --all-targets --locked -- -D warnings
 cargo test --manifest-path fixtures/extension-starter/Cargo.toml --locked
 cargo run --manifest-path fixtures/extension-starter/Cargo.toml --locked -- --check
+python3 scripts/test_capture_terminal.py # Unix only
 python3 apps/gallery/tests/terminal.py target/debug/spark-gallery # Unix only
+cargo xtask package-audit
 
 See docs/performance.md for measured-baseline and actual-preview commands.

@@ -20,10 +20,14 @@ jobs:
       - run: cargo xtask validate
       - run: cargo xtask snapshots --check
       - run: cargo xtask generate-assets --check
+      - name: Downstream package and executable audit
+        run: cargo xtask package-audit
       - run: cargo run -p spark-gallery --locked -- --smoke
       - name: Gallery terminal lifecycle (Linux)
         if: runner.os == 'Linux'
-        run: python3 apps/gallery/tests/terminal.py target/debug/spark-gallery
+        run: |
+          python3 scripts/test_capture_terminal.py
+          python3 apps/gallery/tests/terminal.py target/debug/spark-gallery
       - run: cargo run -p spark-catalog --example composition --locked -- --smoke
       - run: cargo run -p spark-catalog --example adapters --locked -- --smoke
       - run: cargo run -p spark-catalog --example status_theme --locked -- --smoke
