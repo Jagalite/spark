@@ -36,16 +36,19 @@ Final commands, source fingerprints and limitations are recorded in
 [API review](foundation-api-review.md), [visual review](visual-review.md),
 [measurements](performance.md), [bounded endurance](endurance.md).
 
-## Configured, not executed remotely
+## Verified remote native and WASM checks
 
-The CI scaffold targets Linux, macOS and Windows native checks, all three host
-smokes, asset/snapshot validation and downstream consumers; WASM has its own job.
-A workflow file does not establish a passed run. Publication remains blocked,
-therefore no remote CI result is claimed for this local candidate.
+The [foundation run for `d1de335`](https://github.com/Jagalite/spark/actions/runs/39069923630)
+completed successfully on 2026-10-17 and was rechecked on 2026-10-27:
+Linux, macOS and Windows native jobs, plus renderer-only WASM compilation.
+The native jobs cover formatting, Clippy, tests, host smokes, asset/snapshot
+validation, consumers and public extension fixtures. Linux additionally runs the
+gallery PTY lifecycle check. These results qualify those source/build/test routes,
+not a physical terminal or font. Later commits require their own CI evidence.
 
 ## Unqualified routes and visual limits
 
-No named native terminal/font matrix, macOS/Windows actual execution, tmux/SSH
+No named native terminal/font matrix, macOS/Windows interactive terminal review, tmux/SSH
 route, native/WASM cell equality, browser playback, universal Unicode width or
 real terminal-emulator CPU/output latency is qualified. The preview font lacks
 some CJK glyphs; exact-cell preservation tests remain authoritative for those
@@ -55,5 +58,6 @@ Choose the explicit ASCII/monochrome/static profile when appropriate. Baseline a
 requires no emoji, Nerd Font or image protocol. Semantic user text is preserved
 rather than replaced merely to force an ASCII appearance.
 
-Every support claim is scoped to actual evidence. Licenses/public package names,
-release approval and external platform checks remain open; no package is published.
+Every support claim is scoped to actual evidence. MIT source licensing is resolved.
+Public registry-name decisions, package release approval and external physical
+platform checks remain open; no package is published.

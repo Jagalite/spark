@@ -1,7 +1,9 @@
 # MIT foundation source publication verification
 
-This is the foundation publication record for commit `f2488f7`. Later expansion
+This is the historical foundation publication record for commit `f2488f7`. Later expansion
 implementation and checks are recorded in [expansion status](expansions.md).
+The [current acceptance audit](foundation-status.md) verifies remote native/WASM
+CI at `d1de335`; historical unrun-remote statements here describe the earlier handoff.
 
 Prepared 2026-10-17 for the owner's request to review the code, add README and
 .gitignore, and commit/push to Jagalite/spark. The owner selected MIT. This scope

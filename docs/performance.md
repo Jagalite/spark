@@ -18,6 +18,11 @@ cargo xtask snapshots --check
 cargo xtask generate-assets --check
 ```
 
+`allocations` runs the allocation observation alone; `baseline` runs construction,
+painting/output and allocation observations together. `qualify` includes the
+workspace/dependency/renderer boundary validator as a required local check, not
+just the design tests.
+
 Final reports record source fingerprints, exact scenarios and raw command output.
 The source fingerprint covers runtime/catalogue, examples/tests, gallery/tooling,
 consumer fixtures, manifests/assets, exact-cell goldens and capture scripts. A
@@ -69,6 +74,10 @@ with the same recorded release arguments. The one-design fixture also retains it
 early small TravelingMarker extension exercise; this is a comparison of these exact
 fixture binaries, not a perfect isolated marginal cost of each design.
 
+The audit reads executable paths from Cargo compiler-artifact messages, so custom
+`CARGO_TARGET_DIR`/target-directory settings and native executable suffixes are
+respected rather than assuming a fixture-local `target/release` path.
+
 Reports include binary sizes/hashes, build durations, normal dependency trees,
 package file lists and symbol observations. The consumers do not pull Tokio,
 Crossterm, gallery, JSON, hashing, image encoders or allocation instrumentation into
@@ -96,7 +105,7 @@ and nonperiodic observation windows honestly.
 
 The Linux PTY protocol capture exercises real backend output, six selection controls,
 playback/input/view changes, exit and terminal-state restoration. It does not run a
-named terminal emulator or inspect its glyph shaping. macOS/Windows execution,
+named terminal emulator or inspect its glyph shaping. macOS/Windows interactive terminal review,
 tmux/SSH, output latency, emulator CPU and native/WASM sample equality remain
 unmeasured. See [compatibility](compatibility.md).
 

@@ -2,7 +2,10 @@
 
 **Version:** 1.0  
 **Date:** October 12, 2026  
-**Status:** Proposed implementation plan; no library, prototype, integration, or benchmark is represented as completed.  
+**Status:** Original proposed acceptance specification (historical). For implemented
+work, verified checks and remaining external gates, see [current foundation status](foundation-status.md).
+The unchecked checklist and original handoff below are preserved planning history,
+not current implementation status.
 **Working title:** Ratatui Animated Art. Repository and crate names below describe roles, not verified available public names.  
 **First release:** A useful, qualified foundation with six distinctive reference designs—not a large catalogue.
 

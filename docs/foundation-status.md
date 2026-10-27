@@ -1,4 +1,67 @@
-# Foundation status: local candidate
+# Foundation status: implementation and acceptance
+
+## Current acceptance audit — 2026-10-27
+
+The dependency-ordered implementation F01–F22 exists on `main`; the plan's
+unchecked original checklist is not a list of absent features. A fresh source
+review verified the six designs, all four surfaces, both authoring paths, three
+host loops, lifecycle/property coverage, tooling and independent runtime-only
+holdout. This does **not** mean every release acceptance gate is complete.
+
+At source revision [`d1de335`](https://github.com/Jagalite/spark/commit/d1de335eab945a63dd711210e01a97a48e4bc5a0),
+the [foundation CI run](https://github.com/Jagalite/spark/actions/runs/39069923630)
+passed Linux, macOS and Windows native jobs and renderer-only WASM compilation.
+This supersedes the historical assertions below that publication and remote native
+execution had not happened. MIT source publication is also complete; registry
+publication, release tags and deployment are neither performed nor authorized here.
+
+| Milestone | Current acceptance disposition |
+| --- | --- |
+| M0–M3 / F01–F15 | Implemented; native CI exercises runtime, designs, examples and consumers |
+| M4 / F16–F18 | Implemented; gallery, authoring, cell regression and bounded mutation/lifecycle tests exist; historical visual reviews remain explicitly scoped |
+| M4 / F19 | Native build/test and WASM smoke verified remotely; named physical terminal/font review on each OS and emulator measurements remain unqualified |
+| M4 / F20 | Downstream dependency/package/binary audit implemented; observations do not prove anonymous asset-byte elimination |
+| M5 / F21 | Independent runtime-only CrossWeave holdout demonstrates public extension without runtime modifications |
+| M5 / F22 | Source candidate and documentation exist; blanket foundation release acceptance remains blocked by the external visual/platform gates below |
+
+The current continuation repairs qualification-tool defects rather than inventing
+missing renderer features: the documented allocation entry point, portable audit
+executable discovery, complete hard-boundary checks in qualification, and fresh
+source/binary provenance for actual PTY captures. No renderer contract, paint
+permission or expected-art fixture is changed.
+
+### Qualification repair verification
+
+The repaired candidate passes 175 workspace tests, two rustdoc tests, five
+independent holdout tests and 16 starter tests (198 Rust tests total), formatting,
+strict Clippy, asset/cell drift checks, all six local qualification reports,
+gallery/three-host and expansion smokes, downstream consumers and renderer-only
+WASM compilation. Nine capture regression tests, seven endurance-harness guard
+cases and four gallery PTY lifecycle flows pass. A fresh actual PTY capture also
+passes all selection/control events, clean exit and terminal restoration.
+The custom-target-directory package audit and standalone allocation command pass;
+their local raw reports remain excluded under the artifact policy.
+
+Independent review covered the tooling changes and found/fixed a latent UTF-8
+chunk-splitting error in terminal recordings. No new visual golden was accepted.
+Native CI now also runs package-audit, while the new capture regressions run on
+Linux. A final revision's remote result must be checked separately; these local
+results are not a predeclared green remote build.
+
+### Remaining acceptance evidence
+
+- Named terminal and font, with actual visual review, on Linux, macOS and Windows.
+- A tmux/remote-session smoke before claiming either route.
+- Real terminal-emulator CPU/latency measurements; PTYs and offscreen images are
+  explicitly not substitutes.
+- Any package release requires separate approval and tested package/public-name
+  decisions. Browser playback and native/WASM exact-cell equality remain optional,
+  unqualified routes, not silently inferred from compilation.
+
+The available cloud executor can produce Linux PTY evidence but cannot establish
+human visual acceptance on three physical native terminal/font installations.
+No unrun external gate is checked off. Historical reports below retain their dates
+and original scope rather than being rewritten as new measurements.
 
 ## Current source publication, 2026-10-17
 
@@ -76,7 +139,10 @@ See [performance](performance.md), [compatibility](compatibility.md) and
 [integration](integration.md) for measurement scope and commands. Final command
 logs and an explicit machine-readable check summary accompany the local handoff.
 
-## Limits that prevent a blanket release claim
+## Historical limits recorded on 2026-10-14
+
+Items 1–2 and the native build/test portion of item 3 are superseded by the
+current acceptance audit above. The other scope limitations still apply.
 
 1. Remote repository publication remains blocked. No push, remote commit, PR,
    package publication or remote CI run was performed in this continuation
@@ -97,6 +163,7 @@ logs and an explicit machine-readable check summary accompany the local handoff.
 8. Conservative wide-footprint skipping is intentional; general grapheme replacement,
    historical Ratatui compatibility, no_std, reverse playback and a web editor are absent
 
-No implementation count overrides these limitations. The remaining useful steps are owner decisions on licensing/public naming, physical
-platform qualification, and separately authorized publication when appropriate.
+No implementation count overrides physical platform qualification. The historical
+license/source-publication decisions above have since been resolved; package
+publication and unsupported platform claims remain separate.
 External checks must identify the exact source revision they exercise.

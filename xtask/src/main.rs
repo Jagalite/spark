@@ -55,7 +55,8 @@ fn main() -> Result<()> {
         Some("generate-assets") if args.len() == 1 || (args.len() == 2 && args[1] == "--check") => assets::generate(args.len() == 2),
         Some("package-audit") if args.len() == 1 => package_audit(),
         Some("baseline") if args.len() == 1 => { baseline()?; foundation_baseline()?; allocation_baseline() },
-        _ => Err("usage: cargo xtask {validate|snapshots [--check]|render <design-id|all> [--fixture <name>]|record <design-id|all>|qualify <design-id|all>|generate-assets [--check]|package-audit|baseline}".into()),
+        Some("allocations") if args.len() == 1 => allocation_baseline(),
+        _ => Err("usage: cargo xtask {validate|snapshots [--check]|render <design-id|all> [--fixture <name>]|record <design-id|all>|qualify <design-id|all>|generate-assets [--check]|package-audit|baseline|allocations}".into()),
     }
 }
 fn parse_selection(arg: Option<&String>) -> Result<Vec<Selection>> {
@@ -202,6 +203,7 @@ fn source_hash() -> Result<String> {
     for path in [
         "scripts/render_previews.py",
         "scripts/capture_terminal.py",
+        "scripts/test_capture_terminal.py",
         "scripts/qualify_host_endurance.py",
         "catalog/pocket-mascot/frames.json",
     ]
@@ -887,6 +889,10 @@ fn qualify(selected: Vec<Selection>) -> Result<()> {
     let local_checks = vec![
         check_command(
             "cargo",
+            &["run", "-p", "xtask", "--locked", "--", "validate"],
+        ),
+        check_command(
+            "cargo",
             &[
                 "test",
                 "-p",
@@ -1040,6 +1046,27 @@ fn deterministic_samples(selection: Selection) -> bool {
     }
     true
 }
+// Cargo is authoritative about output paths: target-dir configuration, target
+// triples and platform executable suffixes need not match our host assumptions.
+fn built_executable(build: &Value, target_name: &str) -> Option<PathBuf> {
+    if build["status"] != "passed" {
+        return None;
+    }
+    build["stdout"].as_str()?.lines().find_map(|line| {
+        let artifact: Value = serde_json::from_str(line).ok()?;
+        if artifact["reason"] != "compiler-artifact"
+            || artifact["target"]["name"] != target_name
+            || !artifact["target"]["kind"]
+                .as_array()?
+                .iter()
+                .any(|kind| kind == "bin")
+        {
+            return None;
+        }
+        artifact["executable"].as_str().map(PathBuf::from)
+    })
+}
+
 fn package_audit() -> Result<()> {
     fs::create_dir_all("qualification/local")?;
     let checks = vec![
@@ -1097,12 +1124,12 @@ fn package_audit() -> Result<()> {
         (
             "one-design",
             "fixtures/consumer/Cargo.toml",
-            "fixtures/consumer/target/release/spark-external-consumer",
+            "spark-external-consumer",
         ),
         (
             "all-six",
             "fixtures/consumer-all/Cargo.toml",
-            "fixtures/consumer-all/target/release/spark-all-design-consumer",
+            "spark-all-design-consumer",
         ),
     ] {
         let build = check_command(
@@ -1113,12 +1140,15 @@ fn package_audit() -> Result<()> {
                 manifest,
                 "--release",
                 "--locked",
+                "--message-format=json",
             ],
         );
-        let run = if build["status"] == "passed" {
-            check_command(binary, &[])
+        let executable = built_executable(&build, binary);
+        let binary = executable.as_deref();
+        let run = if let Some(binary) = binary {
+            check_command(&binary.to_string_lossy(), &[])
         } else {
-            json!({"status":"not-run","reason":"build failed"})
+            json!({"status":"not-run","reason":"build failed or Cargo did not report the requested executable"})
         };
         let dependencies = check_command(
             "cargo",
@@ -1143,7 +1173,11 @@ fn package_audit() -> Result<()> {
         .into_iter()
         .filter(|name| dependency_text.contains(name))
         .collect::<Vec<_>>();
-        let symbols = check_command("nm", &["-C", binary]);
+        let symbols = if let Some(binary) = binary {
+            check_command("nm", &["-C", &binary.to_string_lossy()])
+        } else {
+            json!({"status":"not-run","reason":"no executable reported by Cargo"})
+        };
         let catalog_symbols = symbols["stdout"]
             .as_str()
             .unwrap_or("")
@@ -1156,8 +1190,8 @@ fn package_audit() -> Result<()> {
             .filter(|line| line.contains("mascot"))
             .cloned()
             .collect::<Vec<_>>();
-        let metadata = fs::metadata(binary).ok();
-        consumers.push(json!({"name":name,"manifest":manifest,"settings":"cargo build --release --locked; each standalone manifest's default release settings; dependencies may be warm","build":build,"run":run,"normal_dependencies":dependencies,"unwanted_dependency_matches":excluded,"binary":binary,"bytes":metadata.map(|v| v.len()),"binary_sha256":fs::read(binary).ok().map(|bytes| format!("{:x}",Sha256::digest(bytes))),"symbol_tool_status":symbols["status"],"catalog_symbols":catalog_symbols,"mascot_symbol_matches":mascot_symbols,"asset_elimination_conclusion":"Symbol and size observations only; const/inlined/anonymous data may not have recognizable symbols"}));
+        let metadata = binary.and_then(|path| fs::metadata(path).ok());
+        consumers.push(json!({"name":name,"manifest":manifest,"settings":"cargo build --release --locked; each standalone manifest's default release settings; dependencies may be warm","build":build,"run":run,"normal_dependencies":dependencies,"unwanted_dependency_matches":excluded,"binary":binary,"bytes":metadata.map(|v| v.len()),"binary_sha256":binary.and_then(|path| fs::read(path).ok()).map(|bytes| format!("{:x}",Sha256::digest(bytes))),"symbol_tool_status":symbols["status"],"catalog_symbols":catalog_symbols,"mascot_symbol_matches":mascot_symbols,"asset_elimination_conclusion":"Symbol and size observations only; const/inlined/anonymous data may not have recognizable symbols"}));
     }
     let passed = checks.iter().all(|c| c["status"] == "passed")
         && consumers.iter().all(|c| {
@@ -1335,6 +1369,7 @@ fn allocation_value(stats: stats_alloc::Stats) -> Value {
     json!({"allocations":stats.allocations,"deallocations":stats.deallocations,"reallocations":stats.reallocations,"bytes_allocated":stats.bytes_allocated,"bytes_deallocated":stats.bytes_deallocated,"bytes_reallocated":stats.bytes_reallocated,"net_live_bytes_delta":stats.bytes_allocated as i128-stats.bytes_deallocated as i128})
 }
 fn allocation_baseline() -> Result<()> {
+    fs::create_dir_all("qualification/local")?;
     let palette = Palette::default();
     let profile = Profile::default();
     let designs = Designs::new(7);
@@ -1462,6 +1497,51 @@ fn allocation_baseline() -> Result<()> {
 #[cfg(test)]
 mod tooling_tests {
     use super::*;
+    #[test]
+    fn package_audit_uses_cargo_executable_not_assumed_target_paths() {
+        for path in [
+            "/custom-target/release/consumer",
+            r"C:\custom-target\release\consumer.exe",
+        ] {
+            let artifact = json!({"reason":"compiler-artifact", "target":{"name":"consumer", "kind":["bin"]}, "executable":path});
+            let output = format!(
+                "not JSON\n{}\n{}\n",
+                json!({"reason":"build-finished", "success":true}),
+                artifact
+            );
+            let build = json!({"status":"passed", "stdout":output});
+            assert_eq!(
+                built_executable(&build, "consumer"),
+                Some(PathBuf::from(path))
+            );
+            assert_eq!(built_executable(&build, "other"), None);
+            let mut failed = build.clone();
+            failed["status"] = json!("failed");
+            assert_eq!(built_executable(&failed, "consumer"), None);
+        }
+    }
+
+    #[test]
+    fn package_audit_rejects_non_executable_artifacts_and_missing_output() {
+        for artifact in [
+            json!({"reason":"compiler-artifact", "target":{"name":"consumer", "kind":["lib"]}, "executable":"library"}),
+            json!({"reason":"compiler-artifact", "target":{"name":"consumer", "kind":["bin"]}, "executable":null}),
+            json!({"reason":"build-script-executed", "target":{"name":"consumer", "kind":["bin"]}, "executable":"script"}),
+        ] {
+            assert_eq!(
+                built_executable(
+                    &json!({"status":"passed", "stdout":artifact.to_string()}),
+                    "consumer"
+                ),
+                None
+            );
+        }
+        assert_eq!(
+            built_executable(&json!({"status":"passed"}), "consumer"),
+            None
+        );
+    }
+
     #[test]
     fn all_six_tool_samples_are_reproducible_and_fixtures_keep_labels() {
         for selection in Selection::ALL {
